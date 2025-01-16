@@ -1,6 +1,6 @@
 ---
 title: "How ETH0 Can Be an Infrastructure as a Service (IAAS) for Multi-Agent Systems"
-date: 2025-01-17
+date: 2025-01-16
 categories: [eth0-rag]
 tags: [ethereum, ai, rag, brainstorming, hackathon]
 ---
