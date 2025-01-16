@@ -4,10 +4,8 @@ date: 2025-01-16
 categories: [eth0-rag]
 tags: [ethereum, ai, rag, brainstorming, hackathon]
 ---
+
 [Written by GPT 4o]
-
-### How ETH0 Can Be an **Infrastructure as a Service (IAAS)** for Multi-Agent Systems
-
 Positioning ETH0 as an **IAAS for multi-agent systems** means providing the **tools, infrastructure, and frameworks** developers need to **host, deploy, and manage multi-agent systems** in the crypto space. Let’s break it down into **layers of functionality**, **use cases**, and **technical implementation**.
 
 ---
