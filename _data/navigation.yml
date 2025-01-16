@@ -1,8 +1,9 @@
 # main links
+# main links
 main:
   - title: "Home"
     url: /
-- title: "X"
+  - title: "About"
     url: https://x.com/hammadtariq
   # - title: "Sample Posts"
   #   url: /year-archive/
