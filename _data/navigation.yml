@@ -2,7 +2,7 @@
 main:
   - title: "Home"
     url: /
-- title: "About"
+- title: "X"
     url: https://x.com/hammadtariq
   # - title: "Sample Posts"
   #   url: /year-archive/
