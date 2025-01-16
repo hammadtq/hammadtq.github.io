@@ -1,10 +1,13 @@
 # main links
-# main links
 main:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: https://x.com/hammadtariq
+  - title: "ETH0 RAG"
+    url: /categories/eth0-rag/
+  - title: "DevOps"
+    url: /categories/devops/
+  #- title: "Home"
+  #  url: /
+  #- title: "About"
+  #  url: https://x.com/hammadtariq
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
