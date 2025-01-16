@@ -1,10 +1,11 @@
 ---
 title: "Pre-Trained Agents for ETH0"
 date: 2025-01-16
-categories: [ETH0 RAG]
+categories: [eth0-rag]
 tags: [ethereum, ai, rag, brainstorming, hackathon]
 ---
 
+[Written by GPT-4o]
 Yes, the idea of adding **pre-trained agents** (with the ability to train additional custom agents) tailored to specific roles like **PM, researcher, coder, product manager**, etc., is an excellent tangent to explore for the hackathon. Here's why this could be impactful and how it aligns with the themes of the event:
 
 ---
