@@ -1,16 +1,20 @@
 # main links
+# main links
 main:
-  - title: "ETH0 RAG"
-    url: /categories/eth0-rag/
-  - title: "DevOps"
-    url: /categories/devops/
-  #- title: "Home"
-  #  url: /
-  #- title: "About"
-  #  url: https://x.com/hammadtariq
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: https://x.com/hammadtariq
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+  # Side navigation (categories)
+categories:
+  - title: "ETH0 RAG"
+    url: /categories/eth0-rag/
+  - title: "DevOps"
+    url: /categories/devops/
