@@ -5,7 +5,7 @@ categories: [eth0-rag]
 tags: [ethereum, ai, rag, brainstorming, hackathon]
 ---
 
-[Written by GPT 4o]
+[Written by GPT-4o]
 Positioning ETH0 as an **IAAS for multi-agent systems** means providing the **tools, infrastructure, and frameworks** developers need to **host, deploy, and manage multi-agent systems** in the crypto space. Let’s break it down into **layers of functionality**, **use cases**, and **technical implementation**.
 
 ---

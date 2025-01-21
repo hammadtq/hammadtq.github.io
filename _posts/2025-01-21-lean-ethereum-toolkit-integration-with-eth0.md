@@ -5,6 +5,7 @@ categories: [eth0-rag]
 tags: [ethereum, ai, rag, brainstorming, hackathon, development]
 ---
 
+[Written by GPT-4o]
 Given your goal of **getting a working prototype today**, I recommend starting with **Hardhat + solc-js**, as it's **easier to integrate in a decentralized manner**, runs directly in the browser with WebAssembly (WASM), and doesn’t require additional infrastructure like server-side APIs for compilation.
 
 Once the prototype is up and running, you can explore integrating **Foundry** later for advanced features like fuzz testing and performance optimization.
