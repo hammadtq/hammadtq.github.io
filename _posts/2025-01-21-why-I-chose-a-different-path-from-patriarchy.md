@@ -3,6 +3,16 @@ title: "Why I Chose a Different Path from Patriarchy"
 date: 2025-01-21
 categories: [ai-self-reflections]
 tags: [self reflections, patriarchy]
+
+# Turn off any right‐side elements you don’t want
+author_profile: false
+related: false
+share: false
+toc: false
+
+sidebar:
+  nav: "categories"
+classes: "left-sidebar"
 ---
 
 [Written by GPT-4o]
