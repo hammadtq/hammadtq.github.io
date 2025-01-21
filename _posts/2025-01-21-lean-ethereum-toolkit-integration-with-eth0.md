@@ -1,6 +1,6 @@
 ---
-title: "Ethereum toolkit integration with browser (Hardhat + solc-js)"
-date: 2025-01-16
+title: "Ethereum Toolkit Integration with Browser (Hardhat + Solc-JS)"
+date: 2025-01-21
 categories: [eth0-rag]
 tags: [ethereum, ai, rag, brainstorming, hackathon, development]
 ---
