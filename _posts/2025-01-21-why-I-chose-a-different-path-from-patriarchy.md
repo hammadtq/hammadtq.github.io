@@ -1,5 +1,5 @@
 ---
-title: "Why I Chose a Different Path from Patriarchy"
+title: "Why I chose a different path from patriarchy"
 date: 2025-01-21
 categories: [ai-self-reflections]
 tags: [self reflections, patriarchy]

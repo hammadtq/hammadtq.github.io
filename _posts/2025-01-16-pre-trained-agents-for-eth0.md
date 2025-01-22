@@ -1,8 +1,8 @@
 ---
-title: "Pre-Trained Agents for ETH0"
+title: "Pre-Trained agents for ETH0"
 date: 2025-01-16
 categories: [eth0-rag]
-tags: [ethereum, ai, rag, brainstorming, hackathon]
+tags: [ethereum, ai, agents, rag, brainstorming, hackathon]
 ---
 
 [Written by GPT-4o]

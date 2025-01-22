@@ -1,5 +1,5 @@
 ---
-title: "Why ETH0 Should Be Positioned as a Go-To Dev Tool"
+title: "Why ETH0 should be positioned as a go-to dev tool"
 date: 2025-01-21
 categories: [eth0-rag]
 tags: [ethereum, ai, rag, brainstorming, hackathon]
