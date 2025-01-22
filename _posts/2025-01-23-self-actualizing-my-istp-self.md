@@ -1,6 +1,6 @@
 ---
 title: "Self-actualizing my ISTP self"
-date: 2025-01-21
+date: 2025-01-23
 categories: [ai-self-reflections]
 tags: [self reflections, patriarchy]
 
