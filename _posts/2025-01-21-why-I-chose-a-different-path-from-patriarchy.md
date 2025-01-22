@@ -12,7 +12,7 @@ toc: false
 
 sidebar:
   nav: "categories"
-classes: "left-sidebar"
+classes: "wide"
 ---
 
 [Written by GPT-4o]
