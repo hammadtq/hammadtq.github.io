@@ -3,16 +3,6 @@ title: "Self-actualizing my ISTP self"
 date: 2025-01-23
 categories: [ai-self-reflections]
 tags: [self reflections, patriarchy]
-
-# Turn off any right‐side elements you don’t want
-author_profile: false
-related: false
-share: false
-toc: false
-
-sidebar:
-  nav: "categories"
-classes: "wide"
 ---
 
 [Written by GPT-4o]

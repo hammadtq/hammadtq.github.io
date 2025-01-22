@@ -1,4 +1,3 @@
-
 ---
 title: "Patriarchy is seeping into my friends"
 date: 2025-01-21
