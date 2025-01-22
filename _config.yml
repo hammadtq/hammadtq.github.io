@@ -292,3 +292,4 @@ defaults:
       related: true
       sidebar:
         nav: "categories"
+      classes: "left-sidebar"
