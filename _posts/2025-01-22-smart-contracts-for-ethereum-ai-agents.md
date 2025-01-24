@@ -2,7 +2,7 @@
 title: "Smart contracts for Ethereum AI infrastructure powered by ETH0"
 date: 2025-01-22
 categories: [eth0-rag]
-tags: [smart-contracts, ethereum, ai, infr, eth0]
+tags: [smart-contracts, ethereum, ai, infra, eth0]
 
 # Turn off any right‐side elements you don’t want
 author_profile: false
