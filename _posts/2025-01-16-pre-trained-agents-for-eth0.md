@@ -3,6 +3,16 @@ title: "Pre-Trained agents for ETH0"
 date: 2025-01-16
 categories: [eth0-rag]
 tags: [ethereum, ai, agents, rag, brainstorming, hackathon]
+
+# Turn off any right‐side elements you don’t want
+author_profile: false
+related: false
+share: false
+toc: false
+
+sidebar:
+  nav: "categories"
+classes: "wide"
 ---
 
 [Written by GPT-4o]

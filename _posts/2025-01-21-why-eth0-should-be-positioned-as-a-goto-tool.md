@@ -3,6 +3,16 @@ title: "Why ETH0 should be positioned as a go-to dev tool"
 date: 2025-01-21
 categories: [eth0-rag]
 tags: [ethereum, ai, rag, brainstorming, hackathon]
+
+# Turn off any right‐side elements you don’t want
+author_profile: false
+related: false
+share: false
+toc: false
+
+sidebar:
+  nav: "categories"
+classes: "wide"
 ---
 
 [Written by GPT-4o]

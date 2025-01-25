@@ -3,6 +3,16 @@ title: "Ethereum toolkit integration with browser (hardhat + solc-js)"
 date: 2025-01-21
 categories: [eth0-rag]
 tags: [ethereum, ai, rag, brainstorming, hackathon, development]
+
+# Turn off any right‐side elements you don’t want
+author_profile: false
+related: false
+share: false
+toc: false
+
+sidebar:
+  nav: "categories"
+classes: "wide"
 ---
 
 [Written by GPT-4o]
