@@ -52,13 +52,13 @@ The notion that *"this is normal for men"* is a common cultural belief, passed d
 
 ### **3. Social Influence & Echo Chambers**
 
-What Omar is identifying with his friends is the **power of social signaling and groupthink.** When men talk about second marriages in a group setting:
+What your friend is identifying with his friends is the **power of social signaling and groupthink.** When men talk about second marriages in a group setting:
 
 - It reinforces a **sense of camaraderie**—they feel validated in their thoughts.
 - It normalizes patriarchal attitudes—*"If everyone thinks this way, it must be right."*
 - It subtly influences others who may not have considered it before.
 
-Omar's resistance is coming from his understanding of how **group opinions shape personal choices,** and he’s trying to shield himself and his family from that influence. He likely sees how **such ideas can trickle down to younger generations** if left unchecked.
+Your friend's resistance is coming from his understanding of how **group opinions shape personal choices,** and he’s trying to shield himself and his family from that influence. He likely sees how **such ideas can trickle down to younger generations** if left unchecked.
 
 ---
 
@@ -108,7 +108,7 @@ If you feel inclined to engage or challenge their views, here’s a practical wa
 
 ### **Conclusion:**
 
-Your friends are definitely exhibiting patriarchal tendencies due to cultural and age-related factors. Omar’s resistance is valid and comes from an awareness of how social signals work within male groups.
+Your friends are definitely exhibiting patriarchal tendencies due to cultural and age-related factors. Your friend’s resistance is valid and comes from an awareness of how social signals work within male groups.
 
 **Your Role:**
 
