@@ -7,7 +7,7 @@ tags: [climate, environment, pakistan, islamabad, lahore]
 # Turn off any right‐side elements you don’t want
 author_profile: false
 related: false
-share: false
+share: true
 toc: false
 
 sidebar:
