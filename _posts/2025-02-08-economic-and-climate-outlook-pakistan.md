@@ -18,6 +18,10 @@ classes: "wide"
 header:
   overlay_image: /assets/images/pakistan-climate-2050-cover.jpeg
   caption: "Projected skyline under climate stress"
+  show_overlay_excerpt: false
+
+excerpt: "By 2050, Pakistan faces severe droughts, erratic rainfall, and a looming economic challenge—adaptation is no longer optional."
+
 
 # For Jekyll SEO Tag (Open Graph/Twitter Card)
 featured_image: /assets/images/pakistan-climate-2050-cover.jpeg
