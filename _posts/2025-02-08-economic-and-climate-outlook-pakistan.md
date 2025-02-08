@@ -13,6 +13,14 @@ toc: false
 sidebar:
   nav: "categories"
 classes: "wide"
+
+# Minimal Mistakes post options
+header:
+  overlay_image: /assets/images/pakistan-climate-2050-cover.jpeg
+  caption: "Projected skyline under climate stress"
+
+# For Jekyll SEO Tag (Open Graph/Twitter Card)
+featured_image: /assets/images/pakistan-climate-2050-cover.jpeg
 ---
 
 [Written by GPT-o1]
