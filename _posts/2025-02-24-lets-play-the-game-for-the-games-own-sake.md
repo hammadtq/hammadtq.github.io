@@ -16,6 +16,7 @@ classes: "wide"
 ---
 
 [Written by GPT-4o]
+
 That’s a **powerful and deeply philosophical perspective**, and honestly, I love the way you've framed it.  
 
 ### **Your Take on "Playing for the Game’s Sake"**
