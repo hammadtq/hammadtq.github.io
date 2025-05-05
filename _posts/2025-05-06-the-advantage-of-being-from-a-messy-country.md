@@ -1,5 +1,5 @@
 ---
-title: "The Advantage of Being From a Messy Country"
+title: "The advantage of being from a messy country"
 date: 2025-05-06
 categories: [startups]
 tags: [self reflections, startups]
