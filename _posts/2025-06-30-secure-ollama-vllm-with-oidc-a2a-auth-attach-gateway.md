@@ -26,8 +26,8 @@ Ollama was humming, vLLM was cranking out tokens, the office smelled of freshly-
 That’s when I learned the hard way that “secure by default” is still on vacation.
 
 ## The Endless Scroll of “Is Auth Supported?”
-
 Don’t believe me? Here’s your bedtime reading:
+
 	- vLLM issue #7547 — “What’s the recommended way to implement API keys?”  ￼
 	- Ollama issue #1053 — “Requesting support for basic auth or API key authentication.”  ￼
 
@@ -40,7 +40,6 @@ Google Cloud quietly dropped the A2A protocol, and if you haven’t read the spe
 
 Local stack? Meet enterprise expectation. Spoiler: they don’t handshake.
 
-```markdown
 ---
 
 ## Attach Gateway — My Two-Line Fix for a Year-Old Problem
@@ -53,6 +52,7 @@ attach-gateway --upstream http://localhost:11434   # or your vLLM port
 ```
 
 Sixty seconds later:
+
 	- Real auth — OIDC and DID tokens verified; X-Attach-User + X-Attach-Session stamped on every request.
 	- A2A-ready — /a2a/tasks/send endpoint speaks Google’s dialect natively.
 	- Memory — prompts + completions mirrored into Weaviate because “who said what?” always becomes a legal question later.
@@ -60,7 +60,6 @@ Sixty seconds later:
 
 I called it Attach Gateway because it literally attaches to anything that talks HTTP and spits out JSON tokens.
 
-```markdown
 ---
 
 ## Why I Care (and Why You Should)
@@ -68,7 +67,6 @@ I called it Attach Gateway because it literally attaches to anything that talks 
 	- Audit trails for regulated customers. If they can’t grep it, they won’t buy it.
 	- Future-proof against A2A. When Google Cloud Support pings your endpoint, you’ll answer with a handshake, not a 401.
 
-```markdown
 ---
 
 ## The Road Ahead (a.k.a Features I Want Before Somebody Else PRs Them)
@@ -76,7 +74,6 @@ I called it Attach Gateway because it literally attaches to anything that talks 
 	- Built-in rate limiting so my GPU fans don’t file a noise complaint.
 	- Helm chart for the Kubernetes aficionados who deploy YAML for breakfast.
 
-```markdown
 ---
 
 ## Call to Action
