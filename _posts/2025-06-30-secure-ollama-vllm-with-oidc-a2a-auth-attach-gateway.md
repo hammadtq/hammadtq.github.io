@@ -19,7 +19,7 @@ summary: "Attach Gateway secures Ollama and vLLM in one pip install—OIDC + Goo
 ---
 
 > “Auth is a TODO, feel free to PR.”
-> — every GitHub thread on local LLM stacks, ever
+> — every GitHub thread on local LLM stacks, ever!
 
 ## Two weeks ago I thought I was done.
 Ollama was humming, vLLM was cranking out tokens, the office smelled of freshly-minted embeddings. Then a junior dev innocently pasted curl http://10.0.0.42:8000/completions into Slack and—boom—my entire RTX box lit up like a cheap arcade machine.
