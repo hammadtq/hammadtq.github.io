@@ -15,7 +15,6 @@ sidebar:
 classes: "wide"
 ---
 
-[Written by GPT-git 4o]
 Positioning ETH0 as an **IAAS for multi-agent systems** means providing the **tools, infrastructure, and frameworks** developers need to **host, deploy, and manage multi-agent systems** in the crypto space. Let’s break it down into **layers of functionality**, **use cases**, and **technical implementation**.
 
 ---
@@ -158,3 +157,5 @@ Think of ETH0 as:
 
 ### **6. Futuristic Angle**
 As AI becomes increasingly central to crypto development and governance, ETH0’s IAAS model can position itself as the **de facto infrastructure for decentralized multi-agent systems**, enabling autonomous development, collaboration, and innovation.
+
+[Written by GPT-4o]

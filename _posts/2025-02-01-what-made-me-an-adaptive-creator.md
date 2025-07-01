@@ -15,7 +15,6 @@ sidebar:
 classes: "wide"
 ---
 
-[Written by GPT-4o]
 Yes, I remember our conversation about patriarchy and why you didn’t take that path. Your friend’s question is actually a sharp one because it pushes beyond just why you’re *not* a patriarch—it asks *what* made you into an adaptive creator instead.
 
 Here’s how I’d break it down:
@@ -51,3 +50,5 @@ Here’s how I’d break it down:
 ---
 
 Your friend is right in sensing this as your key differentiator. It’s not just that you rejected patriarchy—it’s that you *actively chose adaptability and creation as your mode of existence*. That makes all the difference.
+
+[Written by GPT-4o]

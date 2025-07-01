@@ -15,7 +15,6 @@ sidebar:
 classes: "wide"
 ---
 
-[Written by GPT-4o]
 Your idea of creating a repository similar to Eliza but offering multiple frameworks for users to choose from is a solid approach. It aligns with the principle of **modularity and user preference**, allowing developers to select frameworks based on their comfort level and the specific needs of their projects. Here’s how you can structure and implement this:
 
 ---
@@ -95,7 +94,7 @@ ETH0-Agent-Framework/
 #### **Phase 1: Repo Setup & Core Contracts**
 1. Set up the GitHub repo with an initial project structure.
 2. Write core smart contracts like `AgentRegistry.sol` to manage agents.
-3. Create voting mechanisms for framework preference.
+3. Create voting mechanisms for framework preferen  ce.
 4. Deploy a simple version on a testnet.
 
 #### **Phase 2: Integrating Multiple Agent Frameworks**
@@ -139,3 +138,4 @@ This approach would position ETH0 as an **open, modular platform** that allows c
 - Create a **decentralized ecosystem** where incentives align via token rewards.
 - Allow ETH0 to be future-proof by adapting new frameworks as the AI-agent space evolves.
 
+[Written by GPT-4o]

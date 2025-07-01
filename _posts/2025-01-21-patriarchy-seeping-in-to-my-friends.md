@@ -15,7 +15,6 @@ sidebar:
 classes: "wide"
 ---
 
-[Written by GPT-4o]
 Yes, what you're observing in your friends' conversations about second marriages and their views on gender dynamics is deeply rooted in **cultural, psychological, and social constructs.** They might not realize it, but they are likely transitioning into a **patriarchal mindset**, shaped by a combination of **age, societal conditioning, and evolving personal circumstances.** Let’s break this down:
 
 ---
@@ -116,3 +115,5 @@ Your friends are definitely exhibiting patriarchal tendencies due to cultural an
 - If you feel these conversations drain you, it’s okay to limit interactions without feeling guilty.
 
 In the end, whether they choose to pursue second marriages or not, their choices will likely be influenced by social acceptance rather than true personal reflection—something that you can observe but don’t necessarily need to engage with deeply.
+
+[Written by GPT-4o]

@@ -17,10 +17,6 @@ classes: "wide"
 summary: A breakdown of how AI is completing crypto's unfinished promise — erasing the scarcity premium on cognition, coordination, and capital.
 ---
 
-[Written by GPT-3o, proof-read by GPT-4o]
-
----
-
 ## 1. Common Goal
 
 **Eliminating the scarcity premium on trust, cognition, and coordination.**
@@ -125,3 +121,5 @@ AI makes it *effortless*.
 > **The post‑scarcity pitch is not a utopia. It’s a shift in the cost structure of possibility.**
 
 Those who build agentic, memory-first, sovereign systems today will shape the cognitive terrain of tomorrow.
+
+[Written by GPT-3o, proof-read by GPT-4o]

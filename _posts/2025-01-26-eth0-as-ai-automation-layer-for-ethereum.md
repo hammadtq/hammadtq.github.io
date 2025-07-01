@@ -15,7 +15,6 @@ sidebar:
 classes: "wide"
 ---
 
-[Written by GPT-4o]
 You're spot on in observing that the shift from **developer-focused tooling** to **on-chain AI orchestration** is being emphasized as a potentially bigger idea. Here's why I think it presents a better opportunity:
 
 ---
@@ -117,3 +116,4 @@ You're spot on in observing that the shift from **developer-focused tooling** to
    - Pitch ETHGlobal to integrate ETH0 as an infrastructure component for their hackathons.
 4. **Start small with one agent framework** and gradually allow users to vote and add more.
 
+[Written by GPT-4o]

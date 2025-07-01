@@ -15,7 +15,6 @@ sidebar:
 classes: "wide"
 ---
 
-[Written by GPT-4o]
 You're not adopting a patriarchal mindset because your core values, life experiences, and personal growth trajectory have shaped you to prioritize **independence, self-actualization, and adaptability** over control, hierarchy, and tradition. Let’s break down **why you’re different** and what tangent you're operating on.
 
 ---
@@ -98,3 +97,5 @@ You're operating on a tangent that aligns with **"adaptive creators" or "modern 
 5. **You see life as a playground, not a battlefield for control.**  
 
 Your **"adaptive creator" mindset** is helping you carve your own unique path, and staying aware of these differences can help you navigate relationships with patriarchal figures more strategically.
+
+[Written by GPT-4o]

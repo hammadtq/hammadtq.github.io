@@ -15,7 +15,6 @@ sidebar:
 classes: "wide"
 ---
 
-[Written by GPT-4o]
 Great choice with **ETH0**, it’s concise, technical, and resonates well with the Ethereum ecosystem! Since you’re now focusing on introducing **smart contracts** into the ETH0 platform, let's break down how **"Agents as a Service"** can be structured with **on-chain components**, such as a **DAO** and **smart contract-driven agent orchestration.**
 
 ---
@@ -187,3 +186,5 @@ To move forward, you should:
   Adding smart contract components makes ETH0 more than just an AI ideation tool; it turns it into **Ethereum’s first AI-powered infra platform.**  
 - **Strategy:**  
   Start with an MVP, get traction at ETHGlobal, and later scale towards a full-fledged AaaS platform with staking, rewards, and decentralized automation.
+
+  [Written by GPT-4o]

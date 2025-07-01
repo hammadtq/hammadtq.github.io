@@ -15,8 +15,6 @@ sidebar:
 classes: "wide"
 ---
 
-[Written by GPT-4o]
-
 I just landed in South Korea. It’s clean, efficient, well-planned — and emotionally rigid.
 
 Coming from Pakistan, I instantly noticed something deeper than the language or food. The system here works. But you’re not allowed to question it. People follow rules, stay in line, and know their place. Even in airport service roles, the tone is sharp — not out of disrespect, but compression. You can feel the emotional tightness in the air.
@@ -68,3 +66,4 @@ That’s what founders do. That’s what systems fear.
 
 Use it.
 
+[Written by GPT-4o]

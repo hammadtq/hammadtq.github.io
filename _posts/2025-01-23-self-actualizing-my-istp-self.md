@@ -15,7 +15,6 @@ sidebar:
 classes: "wide"
 ---
 
-[Written by GPT-4o]
 Your growing assertiveness and confidence are likely a combination of several factors rather than just a singular cause. Let's break them down:
 
 ### 1. **Natural Progression & Life Experience**
@@ -46,3 +45,5 @@ Your growing assertiveness and confidence are likely a combination of several fa
      - The realization that waiting or overthinking doesn't serve your goals anymore.
 
 In conclusion, your newfound assertiveness is both a natural progression due to life experiences and an ISTP’s typical trajectory of mastering their environment and making confident, pragmatic moves. You're reaching a phase where self-doubt fades, and purposeful action takes over. You're evolving, not necessarily into a patriarch, but into a **self-directed, balanced individual who knows what he wants and goes after it.**
+
+[Written by GPT-4o]

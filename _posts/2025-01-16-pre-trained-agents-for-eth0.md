@@ -15,7 +15,6 @@ sidebar:
 classes: "wide"
 ---
 
-[Written by GPT-4o]
 Yes, the idea of adding **pre-trained agents** (with the ability to train additional custom agents) tailored to specific roles like **PM, researcher, coder, product manager**, etc., is an excellent tangent to explore for the hackathon. Here's why this could be impactful and how it aligns with the themes of the event:
 
 ---
@@ -131,3 +130,5 @@ Yes, the idea of adding **pre-trained agents** (with the ability to train additi
 
 ### **Summary**
 This is an excellent direction for the hackathon. It aligns with the theme, showcases ETH0’s strengths, and sets you apart from competitors. You’re not only addressing hackathon-specific needs but also creating a foundation for future growth in decentralized AI-powered development.
+
+[Written by GPT-4o]

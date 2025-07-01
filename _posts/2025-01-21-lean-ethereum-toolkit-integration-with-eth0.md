@@ -15,7 +15,6 @@ sidebar:
 classes: "wide"
 ---
 
-[Written by GPT-4o]
 Given your goal of **getting a working prototype today**, I recommend starting with **Hardhat + solc-js**, as it's **easier to integrate in a decentralized manner**, runs directly in the browser with WebAssembly (WASM), and doesn’t require additional infrastructure like server-side APIs for compilation.
 
 Once the prototype is up and running, you can explore integrating **Foundry** later for advanced features like fuzz testing and performance optimization.
@@ -238,3 +237,5 @@ By following this plan, you’ll have a **fully functional Ethereum IDE** capabl
 ---
 
 If you're ready, start implementing and I’ll be here to troubleshoot any issues you run into. 🚀
+
+[Written by GPT-4o]

@@ -27,7 +27,6 @@ excerpt: "By 2050, Pakistan faces severe droughts, erratic rainfall, and a loomi
 featured_image: /assets/images/pakistan-climate-2050-cover.jpeg
 ---
 
-[Written by GPT-o1]
 From the best available data and projections (e.g. World Bank studies, IPCC regional reports, and Pakistan’s own climate assessments), here’s what is generally *forecasted*—with the usual caveat that exact outcomes can vary depending on global emissions pathways and local adaptation efforts.
 
 ---
@@ -112,3 +111,5 @@ By 2050, if global emissions remain high and local adaptation lags, Pakistan is 
 For **Lahore** specifically, the major concerns are urban heat, smog, water scarcity, and potential flash flooding. For **Islamabad**, the dropping rainfall totals combined with occasional heavy cloudbursts, water shortages, and a growing population pose the biggest challenges.
 
 All of these forecasts rest on the assumption that climate change remains largely unmitigated. If Pakistan (and the wider world) invests more in both cutting emissions and boosting local resilience (e.g., better infrastructure, water management, reforestation, and climate-smart agriculture), the impact could be less severe than the worst-case scenarios. But as it stands, the data consistently show Pakistan is on the front lines of global warming’s economic and humanitarian risks.
+
+[Written by GPT-o1]

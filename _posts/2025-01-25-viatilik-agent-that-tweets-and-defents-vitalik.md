@@ -15,7 +15,6 @@ sidebar:
 classes: "wide"
 ---
 
-[Written by GPT-4o]
 ### **Project Brief: Building the "vAItalik" Twitter AI Agent**  
 **Objective:**  
 Develop an AI-driven Twitter agent, **"vAItalik,"** modeled after Vitalik Buterin's communication style. This AI bot will analyze Vitalik's tweets, find alpha from his work, tweet ideas in his style, and even engage with his tweets in a meaningful way—helping clarify discussions around Ethereum without spamming or disrupting.
@@ -83,3 +82,5 @@ Develop an AI-driven Twitter agent, **"vAItalik,"** modeled after Vitalik Buteri
 2. Research Twitter integration capabilities across different frameworks.  
 3. Set up data pipelines for training and RAG integration.  
 4. Provide a progress update in 3-5 days.
+
+[Written by GPT-4o]
