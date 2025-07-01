@@ -32,6 +32,7 @@ Don’t believe me? Here’s your bedtime reading:
 	- Ollama issue #1053 — “Requesting support for basic auth or API key authentication.”  ￼
 
 Each thread ends with a variation of: “Just put Nginx in front of it, mate.”
+
 **Great, another proxy to babysit.**
 
 Meanwhile, Google Is Busy Standardising Agent-to-Agent Auth
