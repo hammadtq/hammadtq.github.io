@@ -17,6 +17,8 @@ classes: "wide"
 summary: A breakdown of how AI is completing crypto's unfinished promise — erasing the scarcity premium on cognition, coordination, and capital.
 ---
 
+Scarcity has a cost and we pay it in human life terms. 
+
 ## 1. Common Goal
 
 **Eliminating the scarcity premium on trust, cognition, and coordination.**
