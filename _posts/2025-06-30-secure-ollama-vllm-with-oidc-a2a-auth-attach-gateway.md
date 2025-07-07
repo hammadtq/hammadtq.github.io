@@ -28,7 +28,7 @@ That’s when I learned the hard way that “secure by default” is still on va
 ## The Endless Scroll of “Is Auth Supported?”
 Don’t believe me? Here’s your bedtime reading:
 
-	- vLLM issue #7547 — “What’s the recommended way to implement API keys?”  ￼
+	- vLLM issue #886 — “What’s the recommended way to implement API keys?”  ￼
 	- Ollama issue #1053 — “Requesting support for basic auth or API key authentication.”  ￼
 
 Each thread ends with a variation of: “Just put Nginx in front of it, mate.”
