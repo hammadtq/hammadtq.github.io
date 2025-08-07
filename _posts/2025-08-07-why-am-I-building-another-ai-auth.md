@@ -1,11 +1,11 @@
 ---
-title: "Why am I building another Auth project"
-subtitle: "An odde to the narratives of the Silicon Valley"
+title: "Why Am I Building Another Auth Project"
+subtitle: "An Odde to the Narratives of the Silicon Valley"
 date: 2025-08-07
 categories: [startups]
 tags: [startups]
 
-# Turn off any right‐side elements you don’t want
+# Turn off any right-side elements you don’t want
 author_profile: false
 related: false
 share: false
@@ -15,7 +15,7 @@ sidebar:
   nav: "categories"
 classes: "wide"
 
-summary: "Attach.dev is more about building end-to-end, often boring, plumbing for next 100 deep research tools, its not just an MCP auth project."
+summary: "Attach.dev is the rails beneath the agents. Not just another MCP auth sidecar — we ship the full, boring pipe."
 ---
 
 ## The Odyssey-and-Faceplant of “MCP Auth” Startups
@@ -51,10 +51,10 @@ Most quietly add “dormant” to their Slack workspace.
 ## The pain they missed
 
 The header was symptom, not disease.
-	•	You still need tokens that expire and refresh.
-	•	You still need tenant isolation so one customer’s embeddings don’t leak into another’s.
-	•	You still need a meter that converts “50 M tokens, 3 seats” into an invoice Stripe will actually bill.
-	•	And you need to run it locally today, inside a VPC tomorrow, on-prem next quarter—without rewriting docker-compose for every hop.
+- You still need tokens that expire and refresh.
+- You still need tenant isolation so one customer’s embeddings don’t leak into another’s.
+- You still need a meter that converts “50 M tokens, 3 seats” into an invoice Stripe will actually bill.
+- And you need to run it locally today, inside a VPC tomorrow, on-prem next quarter—without rewriting docker-compose for every hop.
 
 That’s unsexy plumbing. Valley tourists fled the moment the excitation glow faded.
 
@@ -85,4 +85,4 @@ We’re baking the concrete the cupcakes sit on.
 So if you’re tired of refactoring yet‐another header proxy, pick the rails that survive the hype.
 We’ll be here, quietly counting tokens and sending invoices while everyone chases the next shiny prefix.
 
-[Article co-authored by GPT-o3]
+> _Co-written with GPT-4o and o3. They watched the rise and fall too._
