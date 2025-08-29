@@ -36,10 +36,10 @@ The building blocks to address this exist. The work is packaging them into a por
 Think of a narrow, high‑assurance path your sensitive requests can take:
 
 1) **Attested execution.**
-Use hardware‑based isolation with remote attestation so clients can verify the measured runtime and model before any plaintext is handled. Only when policy checks pass does a secure session open end‑to‑end with the isolated runtime.
+Use hardware‑based isolation with remote attestation so clients can verify the measured runtime and model before any plaintext is handled. Only when policy checks pass does a secure session open end‑to‑end with the isolated runtime. See enclave attestation and verifier posture in major clouds. [Google Cloud Confidential Space][ref-gcp-confidential-space]
 
 2) **Unlinkability by default.**
-Send requests through privacy‑preserving relays or one‑time, unlinkable access grants so serving endpoints can’t tie calls back to an identity. Providers see quotas and ciphertext—not who you are.
+Send requests through privacy‑preserving relays or one‑time, unlinkable access grants so serving endpoints can’t tie calls back to an identity. Providers see quotas and ciphertext—not who you are. See Oblivious HTTP for unlinkable request relays and one‑time token discussions. [RFC 9458 OHTTP][ref-rfc9458] · [Vitalik on one‑time access tokens][ref-vitalik]
 
 3) **Verifiable call receipts.**
 Each call returns a compact receipt binding “what ran” to “what was processed” and “under which policy,” signed by the attested runtime. Receipts are easy to verify and easy to store for later audit. No screenshots, no trust fall.
@@ -48,8 +48,8 @@ We can't guarantee in this implementation but it’s a practical posture: **only
 
 ## Why now
 
-- **Hardware is ready enough.** Confidential execution on modern accelerators has matured; the overhead is acceptable for high‑value traffic.
-- **Protocols matured.** Privacy‑preserving relay patterns make unlinkability feasible without contorting your stack.
+- **Hardware is ready enough.** Confidential execution on modern accelerators has matured; the overhead is acceptable for high‑value traffic. [NVIDIA H100 Confidential Computing][ref-nvidia-h100] · [Azure GA for H100 Confidential VMs][ref-azure-h100] · [Perf considerations][ref-cc-perf]
+- **Protocols matured.** Privacy‑preserving relay patterns make unlinkability feasible without contorting your stack. [RFC 9458 OHTTP][ref-rfc9458]
 - **Buyers are primed.** Regulated teams already pay for HSMs, clean rooms, and audit trails; they’ll adopt a “secure lane” if it’s simple and portable.
 
 ## What this is not
@@ -71,5 +71,17 @@ This line-of-thinking isn’t about distrusting providers; it’s about giving s
 If you’re piloting this class of guarantees and want to compare notes, reach out.
 
 _[Written with GPT‑5 Thinking]_ 
+
+---
+
+### References
+
+- [ref-vitalik]: Vitalik on unlinkable, one‑time access tokens (X/Twitter). `https://x.com/VitalikButerin/status/1960311135686529304`
+- [ref-rfc9458]: Oblivious HTTP (OHTTP), RFC 9458. `https://www.rfc-editor.org/info/rfc9458`
+- [ref-nvidia-h100]: NVIDIA: Confidential computing on H100 GPUs. `https://developer.nvidia.com/blog/confidential-computing-on-h100-gpus-for-secure-and-trustworthy-ai/`
+- [ref-azure-h100]: Azure GA: Confidential VMs with NVIDIA H100. `https://techcommunity.microsoft.com/blog/azureconfidentialcomputingblog/general-availability-azure-confidential-vms-with-nvidia-h100-tensor-core-gpus/4242644`
+- [ref-cc-perf]: Research: Performance considerations for GPU confidential computing. `https://arxiv.org/html/2409.03992v2`
+- [ref-gcp-confidential-space]: Google Cloud Confidential Space overview (attestation). `https://cloud.google.com/confidential-computing/confidential-space/docs/confidential-space-overview`
+- [ref-openrouter-zdr]: OpenRouter: Zero Data Retention option and prompt caching docs. `https://openrouter.ai/docs/features/zdr`
 
 
