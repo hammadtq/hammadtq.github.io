@@ -1,5 +1,5 @@
 ---
-title: "Leveraged Thinking: A Framework for Compound Moves"
+title: "Leveraged Thinking: The 4‑Layer Framework (Definition)"
 date: 2025-09-14
 categories: [startups]
 tags: [leverage, strategy, systems, distribution, founders, frameworks, recruiting]
@@ -21,9 +21,9 @@ Leveraged Thinking is the practice of stacking asymmetric bets on top of pre‑o
 
 This post introduces a precise framework—how it works, how it’s different, and how to know if you’re doing it right.
 
-### Not Just “High‑Leverage Work”
+### Leveraged Thinking Definition (4-Layer Framework) {#leveraged-thinking-definition}
 
-What it’s not:
+What it's not:
 
 - **Not only “high‑leverage work.”** It’s more than “code > ops” or “strategy > tasks.”
 - **Not only first‑principles.** You’re not rebuilding the world from axioms every time.
@@ -31,7 +31,7 @@ What it’s not:
 
 It borrows from all three—but only compounds when they’re stacked intentionally and shipped. Think of it like venture capital for your cognition: you place bets through scaffolds you already control. Done right, each move sets up the next.
 
-### The 4‑Layer Stack of Leveraged Thinking
+### The Leveraged Thinking 4‑Layer Stack
 
 Each layer is a multiplier. Without Layer 1, nothing compounds. Without Layer 4, nothing ships.
 
@@ -128,6 +128,17 @@ Part 2 will zoom into:
 - **Hiring**: How to spot high‑leverage operators early—even pre‑“big ship.”
 - **Org design**: Why some 2‑person teams outperform 20‑person ones.
 
-If you operate with leverage—systems‑literate, code‑ and audience‑stacked, socially credible—and want to build around this narrative, DM `@hammadtariq` or email. I’m assembling collaborators who can compound small moves into outsized outcomes.
+If you operate with leverage—systems‑literate, code‑ and audience‑stacked, socially credible—and want to build around this narrative, DM `@hammadtariq` or email. I'm assembling collaborators who can compound small moves into outsized outcomes.
+
+### Related Work
+
+While the phrase "leveraged thinking" appears in leadership coaching and productivity contexts, this **4‑Layer Stack** represents the first rigorous formulation combining systems literacy, capital stack, social‑proof layer, and deliberate asymmetric moves into a unified framework.
+
+**Influences and adjacent ideas:**
+- **Donella Meadows'** *Leverage Points* on systems intervention points ([The Academy for Systems Change](https://donellameadows.org/wp-content/userfiles/Leverage_Points.pdf))
+- **Naval Ravikant** on permissionless leverage through code and media ([Naval](https://nav.al/product-media))
+- **Saras Sarasvathy's** *Effectuation* on means‑driven entrepreneurship ([Effectuation Research](https://cdn.mises.org/sarasvathy_2001_causation_and_effectuation.pdf))
+
+This framework synthesizes these concepts into a practical stack for founders and operators seeking compound outcomes with minimal direct input.
 
 _[Written with GPT‑5 Thinking]_
