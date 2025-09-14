@@ -15,10 +15,6 @@ main:
   # Side navigation (categories)
 categories:
   - title: "ETH0 RAG"
-    url: /categories/#eth0-rag/
-  - title: "Self Reflections"
-    url: /categories/#ai-self-reflections/
-  - title: "Climate Change"
-    url: /categories/#climate-change
-  - title: "Startups"
+    url: /categories/#eth0-rag
+  - title: "STARTUPS"
     url: /categories/#startups
