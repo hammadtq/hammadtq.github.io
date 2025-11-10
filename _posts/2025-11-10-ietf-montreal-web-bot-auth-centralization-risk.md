@@ -15,7 +15,7 @@ classes: "wide"
 summary: "The IETF’s web bot authentication push is meant to make AI crawlers verifiable, but it risks handing control of identity to large CDNs. Here’s what really happened in Montreal, why people are uneasy, and how we can keep the web open."
 ---
 
-I spent last few days sifting through the recordings of IETF 124 in Montreal, I was particularly interested in "Web Bot Auth" related sessions. What started as a technical discussion about making web crawlers more accountable turned into something much bigger—a quiet battle over who gets to control identity on the open web.
+I spent the last few days sifting through the recordings of IETF 124 in Montreal. I was particularly interested in "web bot auth" related sessions. What started as a technical discussion about making web crawlers more accountable turned into something much bigger—a quiet battle over who gets to control identity on the open web.
 
 The basic idea seems reasonable enough: instead of websites trying to guess which bots are legitimate based on IP addresses or user agents (both easily spoofed), let the bots cryptographically sign their requests. Website sees the signature, checks it against a public key, and knows exactly who's knocking.
 
