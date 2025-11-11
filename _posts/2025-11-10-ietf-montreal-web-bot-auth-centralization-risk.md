@@ -15,7 +15,7 @@ classes: "wide"
 summary: "The IETF’s web bot authentication push is meant to make AI crawlers verifiable, but it risks handing control of identity to large CDNs. Here’s what really happened in Montreal, why people are uneasy, and how we can keep the web open."
 ---
 
-I spent the last few days sifting through the recordings of IETF 124 in Montreal. I was particularly interested in "web bot auth" related sessions. What started as a technical discussion about making web crawlers more accountable turned into something much bigger—a quiet battle over who gets to control identity on the open web.
+I spent the last few days sifting through the recordings of IETF 124 in Montreal. I was particularly interested in "web bot auth" related sessions. What started as a technical discussion about making web crawlers more accountable turned into battle over who gets to control identity on the open web.
 
 The basic idea seems reasonable enough: instead of websites trying to guess which bots are legitimate based on IP addresses or user agents (both easily spoofed), let the bots cryptographically sign their requests. Website sees the signature, checks it against a public key, and knows exactly who's knocking.
 
@@ -25,7 +25,7 @@ But here's the thing—once you can definitively identify every bot, you can als
 
 ### The Demo That Worked Too Well
 
-The technical demo was actually pretty elegant. A bot makes an HTTP request, signs it using RFC 9421 (HTTP Message Signatures), and includes a header pointing to where its public key lives. The receiving server verifies the signature and decides what to do. No complex OAuth dances, no bearer tokens floating around—just math proving "this request definitely came from that specific agent."
+The technical demo was actually pretty elegant. A bot makes an HTTP request, signs it using RFC 9421 (HTTP Message Signatures), and includes a header pointing to where its public key lives. The receiving server verifies the signature and decides what to do. There is no complex OAuth dances, no bearer tokens floating around, it's just a cyptographic hash confirming "this request definitely came from that specific agent."
 
 It replaces the current mess where sites maintain IP allowlists for "good" crawlers like Googlebot, which breaks constantly and is trivial to circumvent.
 
@@ -37,7 +37,7 @@ The demo worked flawlessly. That's exactly the problem.
 
 The pushback isn't about the crypto or the technical implementation—it's about what happens next.
 
-**First, there's the centralization trap.** Someone has to run the directories where bot public keys live. If that ends up being Cloudflare, Akamai, and maybe one or two others, we've just recreated the certificate authority problem all over again. Whoever controls the bot registry effectively decides which crawlers get to exist. That's not a technical decision anymore—it's a business one.
+**First, there's the centralization trap.** Someone has to run the directories where bot public keys live. If that ends up being Cloudflare, Akamai, and maybe one or two others, we've just recreated the certificate authority problem all over again. Whoever controls the bot registry effectively decides which crawlers get to exist. This is actually a business discussion instead of a technical one.
 
 **Second, money changes everything.** I watched presentations from companies like TollBit and Skyfire talking about their "No Free Crawls" programs. Once you can cryptographically prove which bot made which request, billing becomes trivial. The rate limiting gets easy and the line between "identity verification" and "paywall infrastructure" starts to blur pretty quickly.
 
@@ -92,8 +92,6 @@ In five years, I want to see a web where bots sign every request with keys they 
 The IETF should define the plumbing, not the permissions. CDNs should compete on performance and features, not on who they allow to speak.
 
 If we get this right, the web stays composable and auditable. If we get it wrong, we'll wake up in a world where a handful of infrastructure companies quietly control the identity layer for everything that touches the open internet.
-
----
 
 ---
 
