@@ -25,7 +25,11 @@ But here's the thing—once you can definitively identify every bot, you can als
 
 ### The Demo That Worked Too Well
 
-The technical demo was actually pretty elegant. A bot makes an HTTP request, signs it using RFC 9421 (HTTP Message Signatures), and includes a header pointing to where its public key lives. The receiving server verifies the signature and decides what to do. There is no complex OAuth dances, no bearer tokens floating around, it's just a cyptographic hash confirming "this request definitely came from that specific agent."
+The technical demo was actually pretty elegant. A bot makes an HTTP request, signs it using RFC 9421 (HTTP Message Signatures), and includes a header pointing to where its public key lives. The receiving server verifies the signature and decides what to do. There are no complex OAuth dances, no bearer tokens floating around—just cryptographic proof that "this request definitely came from that specific agent."
+
+![Web Bot Auth Architecture](/assets/images/web-bot-auth-flow.png)
+
+The architecture cleanly separates identity verification from policy decisions. The verifier library fetches keys from the agent's own directory, while the policy engine makes independent decisions about access, rate limiting, or billing.
 
 It replaces the current mess where sites maintain IP allowlists for "good" crawlers like Googlebot, which breaks constantly and is trivial to circumvent.
 
@@ -37,13 +41,13 @@ The demo worked flawlessly. That's exactly the problem.
 
 The pushback isn't about the crypto or the technical implementation—it's about what happens next.
 
-**First, there's the centralization trap.** Someone has to run the directories where bot public keys live. If that ends up being Cloudflare, Akamai, and maybe one or two others, we've just recreated the certificate authority problem all over again. Whoever controls the bot registry effectively decides which crawlers get to exist. This is actually a business discussion instead of a technical one.
+**First, there's the centralization trap.** The IETF drafts have agents host their own verification keys at origin endpoints. The risk isn't in key hosting—it's in verification. If most sites end up relying on a few CDNs to handle signature verification "for convenience," we've recreated the certificate authority problem through deployment patterns, not protocol design. Whoever controls the most-used verification infrastructure effectively decides which crawlers get widespread acceptance.
 
 **Second, money changes everything.** I watched presentations from companies like TollBit and Skyfire talking about their "No Free Crawls" programs. Once you can cryptographically prove which bot made which request, billing becomes trivial. The rate limiting gets easy and the line between "identity verification" and "paywall infrastructure" starts to blur pretty quickly.
 
-**Third, some of the proposals want intermediaries to hold private keys "for convenience."** This makes me deeply uncomfortable. If I'm running a crawler, I want to control my own keys. When something goes wrong—and it will—I want clear accountability. Outsourcing key custody just makes everything murkier.
+**Third, some vendors are pitching managed key custody "for convenience."** The spec doesn't require this—agents are supposed to control their own signing keys—but I keep hearing it in sales pitches. If I'm running a crawler, I want to control my own keys. When something goes wrong—and it will—I want clear accountability. Managed custody just makes everything murkier.
 
-**Finally, there's the replay problem.** HTTP signatures are designed to survive proxies and CDNs, which is good. But it also means a signed request can potentially be replayed in contexts the original bot never intended. Without careful session binding, this could break legitimate use cases or create new attack vectors.
+**Finally, there's the replay risk.** RFC 9421 gives you timestamps, nonces, and path binding to prevent cross-context replays, but implementations need to use them properly. HTTP signatures survive proxies by design, which is good, but sloppy signature component choices could enable replays in unintended contexts. This is more about implementation hygiene than a fundamental flaw.
 
 ---
 
@@ -61,7 +65,7 @@ Looking at the various proposals floating around, I see several ways this could 
 
 A single "universal bot registry" sounds convenient until you realize it's also a single point of control. Who decides which bots get listed? What happens when geopolitics or business disputes affect those decisions?
 
-Some CDNs are already building proprietary verification APIs that only work with their infrastructure. If the "best" way to verify bot signatures only works on Cloudflare's edge, we've lost the interoperability that makes the web work.
+Some CDNs are building verification APIs optimized for their infrastructure. Cloudflare can verify at the edge, but origins can also verify locally or disable CDN verification entirely. The risk isn't technical lock-in—it's that the "easy" path might funnel everyone through a few big networks.
 
 The private key custody thing keeps coming up in discussions, and it bothers me every time. Bot operators should own their own keys, full stop. The moment you hand that over to an intermediary "for convenience," you've lost control of your own identity.
 
@@ -95,6 +99,6 @@ If we get this right, the web stays composable and auditable. If we get it wrong
 
 ---
 
-*This is based on my notes from IETF 124 in Montreal. The working group is still evolving these proposals, so details will change. But the fundamental tension between technical capability and governance control isn't going anywher.*
+*This is based on my notes from IETF 124 in Montreal. The working group is still evolving these proposals, so details will change. But the fundamental tension between technical capability and governance control isn't going anywhere.*
 
 *If you're working on web infrastructure or bot authentication, I'd love to hear your thoughts. Find me at [@hammadtariq](https://twitter.com/hammadtariq).*  
