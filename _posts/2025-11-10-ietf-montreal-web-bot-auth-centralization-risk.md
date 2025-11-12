@@ -39,15 +39,7 @@ The demo worked flawlessly. That's exactly the problem.
 
 ### Why People Are Getting Nervous
 
-The pushback isn't about the crypto or the technical implementation—it's about what happens next.
-
-**First, there's the centralization trap.** The IETF drafts have agents host their own verification keys at origin endpoints. The risk isn't in key hosting—it's in verification. If most sites end up relying on a few CDNs to handle signature verification "for convenience," we've recreated the certificate authority problem through deployment patterns, not protocol design. Whoever controls the most-used verification infrastructure effectively decides which crawlers get widespread acceptance.
-
-**Second, money changes everything.** I watched presentations from companies like TollBit and Skyfire talking about their "No Free Crawls" programs. Once you can cryptographically prove which bot made which request, billing becomes trivial. The rate limiting gets easy and the line between "identity verification" and "paywall infrastructure" starts to blur pretty quickly.
-
-**Third, some vendors are pitching managed key custody "for convenience."** The spec doesn't require this—agents are supposed to control their own signing keys—but I keep hearing it in sales pitches. If I'm running a crawler, I want to control my own keys. When something goes wrong—and it will—I want clear accountability. Managed custody just makes everything murkier.
-
-**Finally, there's the replay risk.** RFC 9421 gives you timestamps, nonces, and path binding to prevent cross-context replays, but implementations need to use them properly. HTTP signatures survive proxies by design, which is good, but sloppy signature component choices could enable replays in unintended contexts. This is more about implementation hygiene than a fundamental flaw.
+The pushback isn't about the crypto or the technical implementation—it's about what happens next. The concerns center around deployment patterns that could undermine the open web, even when the underlying specs are sound.
 
 ---
 
@@ -61,17 +53,21 @@ The technical direction is right. It's the governance model that has me worried.
 
 ### Where This Could Go Wrong
 
-Looking at the various proposals floating around, I see several ways this could end badly:
+Looking at the various proposals and market dynamics, I see several specific risks:
 
-A single "universal bot registry" sounds convenient until you realize it's also a single point of control. Who decides which bots get listed? What happens when geopolitics or business disputes affect those decisions?
+**The centralization trap.** The IETF drafts have agents host their own verification keys at origin endpoints. The risk isn't in key hosting—it's in verification. If most sites end up relying on a few CDNs to handle signature verification "for convenience," we've recreated the certificate authority problem through deployment patterns, not protocol design. Whoever controls the most-used verification infrastructure effectively decides which crawlers get widespread acceptance.
 
-Some CDNs are building verification APIs optimized for their infrastructure. Cloudflare can verify at the edge, but origins can also verify locally or disable CDN verification entirely. The risk isn't technical lock-in—it's that the "easy" path might funnel everyone through a few big networks.
+**Money changes everything.** I watched presentations from companies like TollBit and Skyfire talking about their "No Free Crawls" programs. Once you can cryptographically prove which bot made which request, billing becomes trivial. Rate limiting gets surgical and the line between "identity verification" and "paywall infrastructure" starts to blur pretty quickly.
 
-The private key custody thing keeps coming up in discussions, and it bothers me every time. Bot operators should own their own keys, full stop. The moment you hand that over to an intermediary "for convenience," you've lost control of your own identity.
+**Managed key custody pitches.** The spec doesn't require this—agents are supposed to control their own signing keys—but I keep hearing it in vendor sales pitches. If I'm running a crawler, I want to control my own keys. When something goes wrong—and it will—I want clear accountability. Managed custody just makes everything murkier.
 
-Without transparency logs—something like Certificate Transparency but for bot identities—we'll have no way to audit who's being excluded or why. That's a recipe for abuse.
+**Implementation hygiene risks.** RFC 9421 gives you timestamps, nonces, and path binding to prevent cross-context replays, but implementations need to use them properly. HTTP signatures survive proxies by design, which is good, but sloppy signature component choices could enable replays in unintended contexts.
 
-And here's the big one: identity verification shouldn't dictate policy. Knowing *who* made a request is different from deciding *what* to do with it. But once those two things get bundled together in the same service, the distinction tends to disappear.
+**Proprietary verification paths.** Some CDNs are building verification APIs optimized for their infrastructure. Cloudflare can verify at the edge, but origins can also verify locally or disable CDN verification entirely. The risk isn't technical lock-in—it's that the "easy" path might funnel everyone through a few big networks.
+
+**Missing transparency.** Without transparency logs—something like Certificate Transparency but for bot identities—we'll have no way to audit who's being excluded or why. That's a recipe for abuse.
+
+**Identity and policy bundling.** Identity verification shouldn't dictate policy. Knowing *who* made a request is different from deciding *what* to do with it. But once those two things get bundled together in the same service, the distinction tends to disappear.
 
 ---
 
