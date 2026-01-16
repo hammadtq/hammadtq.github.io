@@ -1,0 +1,437 @@
+# Hammad Tariq's Blog - Full Content for LLMs
+# https://hammadtariq.github.io
+# Last updated: 2025-01
+# This file contains the complete text of all blog articles for LLM context and training.
+
+================================================================================
+AUTHOR INFORMATION
+================================================================================
+
+Name: Hammad Tariq
+Role: Technical Founder & Builder
+Focus: AI Agents, Web3 Infrastructure, Decentralized Identity
+Twitter: @hammadtariq
+GitHub: github.com/hammadtq
+Website: https://hammadtariq.github.io
+
+================================================================================
+ARTICLE 1: PageRank for the Agentic Web: Separating Authority from Selection
+================================================================================
+Date: December 27, 2025
+URL: /startups/pagerank-for-the-agentic-web/
+Tags: agents, web, policy, delegation, openbotauth, standards
+
+A couple of days ago, I tossed out a thread on X about what I'm calling "PageRank for the agentic web." It started simple: a user tells an agent, "buy 12 eggs, don't ask questions." Fine, but which eggs? Which brand, merchant, or SKU? Who decides the algorithm behind that choice?
+
+The thread got me thinking deeper about how agents will reshape the web, and why we're conflating two critical layers that need to stay distinct.
+
+The egg example isn't just cute. It's a proxy for the headless interfaces coming our way. Chat, voice, agents: browsing as we know it fades, and selection becomes the default power center. That's the "PageRank" analogy. In the old web, PageRank surfaced relevance amid information overload. Here, it's about surfacing choices amid action overload. But to get there, we have to split authority from selection cleanly.
+
+### The Two Layers: Authority vs. Selection
+
+Authority is about delegation and mandates. Can this agent act on my behalf? What about sub-agents it spins up? It's the trust chain that lets actions happen without constant human intervention.
+
+Selection, on the other hand, is the "why this one?" layer. Constraints, preferences, incentives, audits. All feeding into why a particular SKU wins out. It's not ranking for its own sake; it's optimization under policy.
+
+People keep mashing these together, but they're orthogonal. Authority enables the act; selection guides it. Mix them up, and you end up with brittle systems where trust breaks or choices get captured.
+
+### Authority: Web Bot Auth and Delegation
+
+Web Bot Auth (WBA) is tackling authority head-on. It's an IETF draft for standardizing bot identities and interactions, and we're building a reference implementation at openbotauth.org. The repo is open-source, with specs and prototypes to push neutrality and interoperability.
+
+One direction I'm exploring is delegation and mandates. Right now, I'm prototyping an X.509 chained delegation token. The idea is to profile X.509 for agent delegation, using chains to propagate authority from user to agent to sub-agent.
+
+In simple terms: imagine a user grants an agent permission to buy groceries. The agent delegates to a sub-agent for payment processing. Without chained delegation, each hop requires re-authentication or custom trusts. With it, you get verifiable chains. Proof that authority flows legitimately.
+
+### Selection: The Missing "PageRank" Layer
+
+Once authority is sorted, users won't just delegate actions. They'll delegate how to choose. That's "delegated agency" or "choice delegation." For the eggs: hard constraints like max spend or dietary needs (halal, organic), soft preferences like cheapest vs. fastest, and avoids like certain brands.
+
+This isn't mere ranking. It's policy-driven optimization. Budget, delivery time, ethics, no substitutions. All layered in. Without a standard way to express this, agents default to their builders' biases, turning selection into a monopoly lever.
+
+### A Proposed Policy Schema for Selection
+
+What if we framed selection as a portable policy schema? Something simple, JSON-ish, that captures constraints and preferences. It could compile down to existing engines without a new DSL.
+
+Example for "12 eggs":
+- Constraints: max_spend $5, organic, free_range, within 10km, under 2 hours delivery
+- Preferences: 60% weight on cheapest, 30% best rated, 10% fastest
+- Incentives: no affiliate bias, disclose sponsored flags
+- Explainability: require reason codes, show top 3 alternatives
+
+Constraints are hard rules: violate them, and the choice fails. Preferences are soft: weights for multi-objective optimization. Incentives flag biases. Explainability hooks ensure traceability.
+
+### Compiling to Existing Policy Engines
+
+Why reinvent? Compile this schema to proven engines like OPA/Rego, Cedar, or Biscuit. They're battle-tested for policy-as-code.
+
+For hard constraints: map to deny rules in OPA. Soft preferences fit Cedar's authorization with attributes. Biscuit's attenuation could chain preferences down sub-agents.
+
+================================================================================
+ARTICLE 2: Altered States and Generative AI: Toward Human-Centered Creativity
+================================================================================
+Date: November 12, 2025
+URL: /startups/altered-states-and-generative-ai-human-centered-creativity/
+Tags: ai, creativity, bci, eeg, consciousness, generative-models
+
+I've been thinking about a strange gap in how we approach AI creativity.
+
+Large language models have gotten remarkably good at generating text, code, and ideas. But when we want them to be more "creative," the standard approach is to crank up the temperature parameter. Higher temperature means more randomness in token sampling, which produces more diverse outputs. The problem is that this randomness is just noise. Push it too far and you get incoherent word salad.
+
+This is interesting because human creativity works completely differently. When we enter altered states of consciousness, whether through meditation, flow states, or other means, something specific happens in the brain: neural entropy increases, default mode network activity shifts, and global connectivity patterns change. The result is divergent thinking and novel associations, but grounded in lived experience rather than statistical noise.
+
+### The Temperature Problem
+
+When researchers study LLM creativity, they consistently find the same pattern. Temperature does boost novelty, but there's a sharp trade-off with coherence. Temperature is a blunt dial, not a creativity enhancer.
+
+The fundamental issue is that LLM randomness has no grounding. It's just noise injected into probability distributions. Human altered states work differently. The increased entropy comes with preserved meta-cognitive awareness.
+
+### The Idea: Real-Time BCI-Driven Generation
+
+What if we closed the loop? Modern EEG headsets are getting cheaper and more accurate. Consumer-grade devices can already pick up alpha/theta ratios, detect meditation states, and identify attention patterns.
+
+Imagine connecting that to LLM generation parameters in real-time:
+- You enter a meditation or focused altered state
+- EEG detects the characteristic neural signatures
+- Those signals map to generation parameters: temperature, top-p sampling, attention weights
+- The model generates output that reflects your actual cognitive state
+
+This creates a feedback loop. The AI becomes a prosthetic extension of your cognition, not a simulation of someone else's experience.
+
+================================================================================
+ARTICLE 3: Web Bot Auth After Montreal: The Power Shift We Shouldn't Ignore
+================================================================================
+Date: November 10, 2025
+URL: /startups/ietf-montreal-web-bot-auth-centralization-risk/
+Tags: ietf, identity, bots, cloudflare, http, rfc9421, decentralization
+
+I spent the last few days sifting through the recordings of IETF 124 in Montreal. What started as a technical discussion about making web crawlers more accountable turned into battle over who gets to control identity on the open web.
+
+The basic idea seems reasonable enough: instead of websites trying to guess which bots are legitimate based on IP addresses or user agents (both easily spoofed), let the bots cryptographically sign their requests. Website sees the signature, checks it against a public key, and knows exactly who's knocking.
+
+But here's the thing—once you can definitively identify every bot, you can also control every bot.
+
+### The Demo That Worked Too Well
+
+The technical demo was actually pretty elegant. A bot makes an HTTP request, signs it using RFC 9421 (HTTP Message Signatures), and includes a header pointing to where its public key lives. The receiving server verifies the signature and decides what to do.
+
+It replaces the current mess where sites maintain IP allowlists for "good" crawlers like Googlebot, which breaks constantly and is trivial to circumvent.
+
+### Where This Could Go Wrong
+
+The centralization trap: The IETF drafts have agents host their own verification keys at origin endpoints. The risk isn't in key hosting—it's in verification. If most sites end up relying on a few CDNs to handle signature verification "for convenience," we've recreated the certificate authority problem.
+
+Money changes everything: Once you can cryptographically prove which bot made which request, billing becomes trivial. The line between "identity verification" and "paywall infrastructure" starts to blur.
+
+### How to Do This Right
+
+Make directories federated and auditable. Instead of one big registry, let every bot operator host their own endpoint with their public keys. Add transparency logs so we can audit what's happening.
+
+Keep verification libraries open and interoperable. The same signature verification should work identically across all platforms.
+
+Keep identity separate from policy. The identity layer should just answer "who made this request?" The policy layer should be completely separate.
+
+================================================================================
+ARTICLE 4: Leveraged Thinking: The 4-Layer Framework
+================================================================================
+Date: September 14, 2025
+URL: /startups/leveraged-thinking-4-layer-framework-definition/
+Tags: leverage, strategy, systems, distribution, founders, frameworks
+
+Leveraged Thinking is the practice of stacking asymmetric bets on top of pre-owned systems, assets, and social signals to compound outcomes with minimal direct input. It's how small teams punch above their weight, how founders get velocity with no headcount, and how new ideas outpace incumbents with 1/10th the surface area.
+
+### The Leveraged Thinking 4-Layer Stack
+
+Each layer is a multiplier. Without Layer 1, nothing compounds. Without Layer 4, nothing ships.
+
+#### Layer 1: Systems Literacy
+If you can't see the system, you can't exploit it. You learn to spot the surface-area vs. payoff mismatch—the edges where effort is cheap and impact is outsized.
+
+#### Layer 2: Capital Stack
+Once you see the system, you need chips to play. Your owned leverage:
+- Cash: Accelerant, not a starting point
+- Code/IP: Tools you've built or can repurpose
+- Audience: Distribution you control
+
+#### Layer 3: Social-Proof Layer
+Your credibility scaffolding. You compound only if trust routes to you.
+
+#### Layer 4: Deliberate High-Leverage Moves
+Where leverage becomes real. You make a deliberate asymmetric bet:
+- Risk is limited
+- Reward is uncapped
+- You ride systems; you don't brute-force them
+
+### Diagnostic: Are You Thinking in Leverage?
+
+Use this 1-5 scale:
+- Is this built on existing trusted systems?
+- Does it reuse assets I already control?
+- Would distribution improve with one credible voice?
+- Is payoff unbounded vs. effort?
+
+If you're not scoring 4+ on most, you're overworking the wrong problem.
+
+================================================================================
+ARTICLE 5: From 'Trust Us' to 'Prove It': A Confidential Lane for AI Inference
+================================================================================
+Date: August 29, 2025
+URL: /startups/from-trust-us-to-prove-it-confidential-lane-for-ai-inference/
+Tags: privacy, verifiable-compute, inference, security, governance
+
+Most AI inference today runs on policy and promises: "no training on your data," "short retention," and so on. But as prompts start touching crown-jewel assets—customer data, legal drafts, proprietary R&D—security teams want something stronger than policy: proof.
+
+### Why 'confidential' needs to become 'verifiable'
+
+Teams keep circling three practical problems:
+1. Runtime opacity: You rarely know what exact runtime and model binary processed your prompt
+2. Linkability: Even if content is encrypted, metadata can still tie requests back to specific users
+3. Auditability: Security wants an immutable, vendor-neutral record
+
+### A minimal 'confidential lane'
+
+1. Attested execution: Use hardware-based isolation with remote attestation so clients can verify the measured runtime
+2. Unlinkability by default: Send requests through privacy-preserving relays or one-time, unlinkable access grants
+3. Verifiable call receipts: Each call returns a compact receipt binding "what ran" to "what was processed"
+
+================================================================================
+ARTICLE 6: Why Am I Building Another Auth Project
+================================================================================
+Date: August 7, 2025
+URL: /startups/why-am-I-building-another-ai-auth/
+Tags: startups, auth, mcp
+
+Attach.dev is the rails beneath the agents. Not just another MCP auth sidecar — we ship the full, boring pipe.
+
+### The Odyssey-and-Faceplant of "MCP Auth" Startups
+
+June 2025. San Francisco is still wearing the bruise of the "agentic" hype cycle.
+
+Last October every YC Discord channel looked the same:
+"We're building secure MCP auth so agents can call tools safely."
+Demo video: two curl commands, a green check-mark, and a $3M SAFE.
+
+Then Cursor ships "Custom Header" support. Claude copies them 48 hours later. Suddenly your $3M startup is one menu item in an editor.
+
+### The pain they missed
+
+The header was symptom, not disease:
+- You still need tokens that expire and refresh
+- You still need tenant isolation so one customer's embeddings don't leak into another's
+- You still need a meter that converts "50M tokens, 3 seats" into an invoice
+- And you need to run it locally today, inside a VPC tomorrow, on-prem next quarter
+
+### What Attach.dev replaces
+
+If you're building a deep research tool, customer-facing agent, or local-first LLM copilot, you need: secure auth, namespaced memory, token billing, repeatable deploys.
+
+Attach.dev gives you all that in one drop-in gateway. Same compose file on your MacBook, DigitalOcean App Platform, or the bank's Kubernetes cluster.
+
+================================================================================
+ARTICLE 7: Secure Ollama & vLLM in 60 Seconds: OIDC + A2A Auth with Attach Gateway
+================================================================================
+Date: June 30, 2025
+URL: /startups/secure-ollama-vllm-with-oidc-a2a-auth-attach-gateway/
+Tags: auth, security, ollama, vllm, oidc
+
+Two weeks ago I thought I was done. Ollama was humming, vLLM was cranking out tokens. Then a junior dev innocently pasted curl http://10.0.0.42:8000/completions into Slack and my entire RTX box lit up.
+
+### Attach Gateway — My Two-Line Fix
+
+```bash
+pip install attach-dev
+attach-gateway --upstream http://localhost:11434
+```
+
+Sixty seconds later:
+- Real auth: OIDC and DID tokens verified; X-Attach-User + X-Attach-Session stamped on every request
+- A2A-ready: /a2a/tasks/send endpoint speaks Google's dialect natively
+- Memory: prompts + completions mirrored into Weaviate for audit
+- Zero config: no Caddy, no hand-rolled nginx.conf
+
+================================================================================
+ARTICLE 8: AI Will Finish What Crypto Started: The Post-Scarcity Pitch
+================================================================================
+Date: June 19, 2025
+URL: /startups/ai-and-crypto-enabling-post-scarcity-world/
+Tags: ai, crypto, post-scarcity, startups
+
+Scarcity has a cost and we pay it in human life terms.
+
+### Common Goal: Eliminating the scarcity premium on trust, cognition, and coordination.
+
+Why 2025 is a turning point:
+- AI collapses the cost of cognitive labour
+- Crypto collapses the cost of institutional trust and coordination
+
+### The Post-Scarcity Stack
+
+| Layer | Scarcity Eliminated | Enabling Technology |
+|-------|---------------------|---------------------|
+| Compute | Energy, hardware limits | Renewables, specialized silicon |
+| Cognition | Skilled labour, mental load | LLMs, memory-based agents |
+| Coordination | Institutional trust bottlenecks | Blockchains, ZK proofs |
+| Capital | Gatekept funding | Tokenized assets, crowdlending |
+
+### Implications
+
+For Builders:
+- MVP costs drop to near-zero
+- No-code becomes no-org: Agents replace the need for ops
+- Leverage becomes memory-bound
+
+For Investors:
+- Post-scarcity systems don't grow by hiring—they grow by remembering better
+- Moats are no longer networks—they're memory, intent-alignment, and modularity
+
+================================================================================
+ARTICLE 9: ETH0 as an AI automation layer for Ethereum
+================================================================================
+Date: January 26, 2025
+URL: /eth0-rag/eth0-as-ai-automation-layer-for-ethereum/
+Tags: smart-contracts, ethereum, ai, infra, eth0, agent
+
+### Market Differentiation
+
+Dev-focused tooling (IDE, RAG, AI for coding) space is highly competitive with Replit, Cursor, GitHub Copilot. The concept of AI agents interacting with smart contracts is still nascent in the Ethereum ecosystem.
+
+By positioning ETH0 as a first-mover in AI-powered on-chain automation, the project stands to gain unique positioning. Decentralized automation with AI agents can unlock new use cases: autonomous DAOs, AI-driven DeFi, agent-based NFT markets.
+
+### Strategic Leverage in Ethereum Ecosystem
+
+- Leverage Ethereum's native strengths with L2s (Arbitrum, Optimism, Base)
+- Aligns with Vitalik's vision around AI and Ethereum
+- Potential partnerships with EF, Gitcoin, and hackathons
+
+### Monetization & Long-Term Viability
+
+On-chain AI agents can be monetized via usage fees, staking models, and incentivized governance. Examples:
+- Managing DeFi positions
+- Automating treasury operations
+- Agent-as-a-Service (AaaS)
+
+### The Infrastructure Play is More Scalable
+
+ETH0 as an "Ethereum-native AI automation layer" can scale by plugging into dApps, DAOs, and DeFi protocols. Comparable projects: Gelato Network, Chainlink Keepers, The Graph.
+
+================================================================================
+ARTICLE 10: Smart contracts for Ethereum AI infrastructure powered by ETH0
+================================================================================
+Date: January 22, 2025
+URL: /eth0-rag/smart-contracts-for-ethereum-ai-agents/
+Tags: smart-contracts, ethereum, ai, infra, eth0
+
+### Vision for Agents-as-a-Service (AaaS) on ETH0
+
+ETH0 provides on-chain infrastructure where AI agents interact with Ethereum smart contracts in a trustless, verifiable, and composable way:
+1. A decentralized marketplace for AI agents
+2. Autonomous smart contracts managing agent permissions
+3. Social curation and RAGs tied to blockchain with tokenomics
+
+### Core Components
+
+#### ETH0 DAO (Governance)
+- Agent Curation and Approval via votes
+- Revenue Sharing Model with ETH0 tokens
+- Parameter Adjustments through governance
+
+#### Agents Hooked with Smart Contracts
+- On-Chain Automation Agents: Deploy smart contracts, manage DeFi positions, send alerts
+- Agent-Orchestrated Workflows: Research agent → Dev agent → Legal agent pipelines
+
+#### Smart Contracts Needed
+- Agent Registry Contract
+- Escrow/Payment Contract (pay-per-call)
+- Automation Trigger Contract (Chainlink Keepers)
+- NFT Access Tokens for agent ownership
+
+================================================================================
+ARTICLE 11: Custom agent frameworks for ETH0
+================================================================================
+Date: January 24, 2025
+URL: /eth0-rag/agent-frameworks-for-eth0/
+Tags: smart-contracts, ethereum, ai, infra, eth0
+
+### Structure of the ETH0 Agent Framework Repo
+
+```
+ETH0-Agent-Framework/
+├── frameworks/
+│   ├── smol_agents/
+│   ├── agentkit_base/
+│   ├── open_agents/
+│   ├── custom_frameworks/
+├── contracts/
+│   ├── AgentRegistry.sol
+│   ├── AgentWallet.sol
+├── frontend/
+├── utils/
+```
+
+### Features
+
+- Framework Selection via Frontend (SmolAgents, AgentKit, Custom)
+- Voting and Rating System with smart contracts
+- Smart Contract-Based Agent Deployment
+- User-Friendly UI with no-code/low-code experience
+- Storage via IPFS, smart contracts, and vector DBs
+
+================================================================================
+ARTICLE 12: Pre-Trained agents for ETH0
+================================================================================
+Date: January 16, 2025
+URL: /eth0-rag/pre-trained-agents-for-eth0/
+Tags: ethereum, ai, agents, rag, brainstorming, hackathon
+
+### Why Pre-Trained Agents for Specific Roles Work
+
+Pre-trained agents for specialized roles simulate team dynamics:
+- Researcher Agent: Gathers insights and competitive analysis
+- PM Agent: Outlines tasks, prioritizes features, defines timelines
+- Coder Agent: Generates code snippets, fixes bugs, audits contracts
+- Product Manager Agent: Suggests user stories, manages scope
+
+### Proposed MVP Features
+
+1. Agent Role Selection (Research, Coding, PM, Product)
+2. Agent Collaboration (multiple agents in same session)
+3. Custom Agent Training with custom RAG datasets
+4. Agent-Oriented UI/UX
+
+================================================================================
+ARTICLE 13: How ETH0 can be Infrastructure as a Service for multi-agent systems
+================================================================================
+Date: January 16, 2025
+URL: /eth0-rag/iaas-for-ai-agents-for-eth0/
+Tags: ethereum, ai, rag, brainstorming, hackathon
+
+### What is IAAS for Multi-Agent Systems?
+
+ETH0 as IAAS provides:
+- Host and run pre-trained AI agents
+- Deploy custom agents trained on curated datasets
+- Enable agents to collaborate across networks
+- Interact with blockchain systems natively
+
+Think of ETH0 as:
+1. A cloud-like environment for AI agents specialized in crypto
+2. An SDK or API-first platform for building agents
+3. A repository and marketplace for sharing agents
+
+### Key Features
+
+- Agent Hosting (Dockerized, serverless functions)
+- Agent Deployment with pre-trained LLMs
+- Native Blockchain Integration (SDKs, on-chain data access)
+- Agent Collaboration (message-passing, shared memory)
+- RAG Integration as a Service
+- Tokenized Ecosystem for incentives
+
+================================================================================
+END OF FULL CONTENT
+================================================================================
+
+For the summary version, see: /llms.txt
+For structured data, see individual pages with JSON-LD markup.
+
+Content license: Attribution required when citing.

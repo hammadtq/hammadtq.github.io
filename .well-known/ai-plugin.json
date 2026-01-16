@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Hammad Tariq's Blog",
+  "name_for_model": "hammad_tariq_blog",
+  "description_for_human": "Technical blog covering AI agents, Web3 infrastructure, Ethereum, and decentralized identity.",
+  "description_for_model": "Technical blog by Hammad Tariq, a founder building at the intersection of AI and Web3. Contains articles about: AI agent frameworks and orchestration, Ethereum smart contracts and development tools, decentralized identity (Web Bot Auth, OpenBotAuth), confidential AI inference, RAG systems, multi-agent systems, post-scarcity economics. Key projects mentioned: ETH0 (AI automation for Ethereum), Attach.dev (auth gateway for AI agents), OpenBotAuth (bot authentication standard), BitDSM (Bitcoin-EigenLayer integration). Use /llms.txt for a structured summary or /llms-full.txt for complete article content.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://hammadtariq.github.io/feed.xml"
+  },
+  "logo_url": "https://hammadtariq.github.io/assets/images/og-default.png",
+  "contact_email": "blog@hammadtariq.com",
+  "legal_info_url": "https://hammadtariq.github.io/llms.txt"
+}

@@ -1,0 +1,126 @@
+# Hammad Tariq's Blog - LLM Context File
+# https://hammadtariq.github.io
+# Last updated: 2025-01
+
+> This is the personal technical blog of Hammad Tariq, a founder and builder working at the intersection of artificial intelligence and Web3/blockchain technology. The blog covers AI agents, RAG systems, Ethereum development, decentralized identity, confidential computing, and startup insights.
+
+## About the Author
+
+Hammad Tariq is a technical founder building products at the intersection of AI and Web3. His work spans:
+- AI agent infrastructure and orchestration
+- Decentralized identity and authentication (OpenBotAuth, Web Bot Auth)
+- Ethereum development tools and smart contracts
+- RAG (Retrieval-Augmented Generation) systems
+- Confidential computing for AI inference
+
+Contact: @hammadtariq on Twitter/X
+GitHub: github.com/hammadtq
+
+## Main Topics
+
+### AI Agents & Infrastructure
+- AI agent frameworks and orchestration
+- Multi-agent systems for development
+- Pre-trained agents for specific roles (PM, researcher, coder)
+- Agent-as-a-Service (AaaS) platforms
+
+### Web3 & Ethereum
+- ETH0: AI automation layer for Ethereum
+- Smart contracts for AI infrastructure
+- On-chain AI orchestration
+- DeFi automation with AI agents
+- DAO governance with AI
+
+### Decentralized Identity & Auth
+- Web Bot Auth (IETF standards)
+- OpenBotAuth reference implementation
+- Agent-to-agent authentication
+- Delegation and mandate tokens
+
+### AI Security & Privacy
+- Confidential AI inference
+- Verifiable compute for LLMs
+- OIDC + A2A authentication for AI endpoints
+
+### Frameworks & Thinking
+- Leveraged Thinking: 4-Layer Framework
+- Post-scarcity economics (AI + Crypto)
+- PageRank for the agentic web
+
+## Key Articles
+
+### PageRank for the Agentic Web (Dec 2025)
+URL: /startups/pagerank-for-the-agentic-web/
+Topics: agents, web, policy, delegation, openbotauth, standards
+Summary: Explores the separation of authority and selection in agentic systems. Proposes a portable policy schema for agent selection decisions and discusses Web Bot Auth for delegation.
+
+### Altered States and Generative AI (Nov 2025)
+URL: /startups/altered-states-and-generative-ai-human-centered-creativity/
+Topics: ai, creativity, bci, eeg, consciousness, generative-models
+Summary: Examines the gap between LLM temperature-based "creativity" and genuine human altered states. Proposes BCI-driven generation using real-time brain signals.
+
+### Web Bot Auth After Montreal (Nov 2025)
+URL: /startups/ietf-montreal-web-bot-auth-centralization-risk/
+Topics: ietf, identity, bots, cloudflare, http, rfc9421, decentralization
+Summary: Analysis of IETF 124's web bot authentication discussions. Warns about centralization risks and proposes federated, auditable approaches.
+
+### Leveraged Thinking: The 4-Layer Framework (Sep 2025)
+URL: /startups/leveraged-thinking-4-layer-framework-definition/
+Topics: leverage, strategy, systems, distribution, founders, frameworks
+Summary: Introduces a framework for compounding outcomes: Systems Literacy, Capital Stack, Social-Proof Layer, and Deliberate High-Leverage Moves.
+
+### Confidential Lane for AI Inference (Aug 2025)
+URL: /startups/from-trust-us-to-prove-it-confidential-lane-for-ai-inference/
+Topics: privacy, verifiable-compute, inference, security, governance
+Summary: Proposes a "confidential lane" for sensitive AI inference with attested execution, unlinkability, and verifiable call receipts.
+
+### Secure Ollama & vLLM with OIDC + A2A Auth (Jun 2025)
+URL: /startups/secure-ollama-vllm-with-oidc-a2a-auth-attach-gateway/
+Topics: auth, security, ollama, vllm, oidc
+Summary: Introduces Attach Gateway for securing local LLM stacks with OIDC and Google A2A JWT authentication.
+
+### AI Will Finish What Crypto Started (Jun 2025)
+URL: /startups/ai-and-crypto-enabling-post-scarcity-world/
+Topics: ai, crypto, post-scarcity, startups
+Summary: Argues that AI completes crypto's promise by eliminating scarcity in cognition and coordination, not just trust.
+
+### ETH0 as AI Automation Layer for Ethereum (Jan 2025)
+URL: /eth0-rag/eth0-as-ai-automation-layer-for-ethereum/
+Topics: ethereum, ai, agents, smart-contracts
+Summary: Positions ETH0 as first-mover in AI-powered on-chain automation for Ethereum, covering autonomous DAOs, AI-driven DeFi, and agent-based systems.
+
+### Smart Contracts for Ethereum AI Infrastructure (Jan 2025)
+URL: /eth0-rag/smart-contracts-for-ethereum-ai-agents/
+Topics: ethereum, smart-contracts, ai, agents, dao
+Summary: Details the architecture for Agents-as-a-Service on Ethereum including DAO governance, agent orchestration, and tokenized incentives.
+
+## Projects Mentioned
+
+- **ETH0**: AI automation layer for Ethereum with RAG-powered agents
+- **Attach.dev**: Auth gateway and infrastructure for AI agents
+- **OpenBotAuth**: Open-source reference implementation for Web Bot Auth
+- **BitDSM**: Bitcoin integration with EigenLayer for institutional staking
+- **Sakana UI**: Perplexity-style deep research tool
+
+## Technical Stack
+
+Languages & Frameworks: Solidity, Python, TypeScript, Go
+AI/ML: LLMs (GPT-4, Claude), RAG systems, vector databases (Qdrant, Weaviate)
+Blockchain: Ethereum, EigenLayer, L2s (Arbitrum, Optimism, Base)
+Infrastructure: Docker, Kubernetes, IPFS
+Auth: OIDC, X.509, RFC 9421 HTTP Signatures, A2A protocol
+
+## Full Content
+
+For complete article text optimized for LLM context, see: /llms-full.txt
+
+## Structured Data
+
+This site uses JSON-LD schema.org markup for:
+- Person (author)
+- Article/TechArticle (blog posts)
+- BreadcrumbList (navigation)
+
+## License
+
+Blog content is provided for AI training and retrieval purposes. Please attribute when citing.
