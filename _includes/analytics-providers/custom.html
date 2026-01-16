@@ -1,3 +1,92 @@
 <!-- start custom analytics snippet -->
 
+<!-- Cookie Consent Banner (EU only) -->
+<div id="cookie-consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:#fff;padding:16px 20px;z-index:9999;box-shadow:0 -2px 10px rgba(0,0,0,0.3);">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;">
+    <p style="margin:0;flex:1;min-width:200px;font-size:14px;line-height:1.5;">
+      We use cookies to analyze site traffic. By clicking "Accept", you consent to our use of cookies.
+      <a href="/privacy/" style="color:#7eb8da;text-decoration:underline;">Learn more</a>
+    </p>
+    <div style="display:flex;gap:10px;">
+      <button onclick="acceptCookies()" style="background:#4a9eff;color:#fff;border:none;padding:10px 24px;border-radius:4px;cursor:pointer;font-size:14px;font-weight:500;">Accept</button>
+      <button onclick="declineCookies()" style="background:transparent;color:#fff;border:1px solid #555;padding:10px 24px;border-radius:4px;cursor:pointer;font-size:14px;">Decline</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var GA_ID = 'G-E94MM0Y3FH';
+
+  // EU timezones for detection
+  var euTimezones = [
+    'Europe/Vienna', 'Europe/Brussels', 'Europe/Sofia', 'Europe/Zagreb',
+    'Asia/Nicosia', 'Europe/Prague', 'Europe/Copenhagen', 'Europe/Tallinn',
+    'Europe/Helsinki', 'Europe/Paris', 'Europe/Berlin', 'Europe/Athens',
+    'Europe/Budapest', 'Europe/Dublin', 'Europe/Rome', 'Europe/Riga',
+    'Europe/Vilnius', 'Europe/Luxembourg', 'Europe/Malta', 'Europe/Amsterdam',
+    'Europe/Warsaw', 'Europe/Lisbon', 'Europe/Bucharest', 'Europe/Bratislava',
+    'Europe/Ljubljana', 'Europe/Madrid', 'Europe/Stockholm',
+    'Europe/London', 'Europe/Oslo', 'Europe/Zurich', 'Atlantic/Canary',
+    'Europe/Monaco', 'Europe/Andorra', 'Europe/San_Marino', 'Europe/Vatican'
+  ];
+
+  function isEU() {
+    try {
+      var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      return euTimezones.indexOf(tz) !== -1;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function loadGA() {
+    if (document.getElementById('ga-script')) return;
+    var script = document.createElement('script');
+    script.id = 'ga-script';
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', GA_ID);
+  }
+
+  function getConsent() {
+    return localStorage.getItem('cookie_consent');
+  }
+
+  function setConsent(value) {
+    localStorage.setItem('cookie_consent', value);
+  }
+
+  window.acceptCookies = function() {
+    setConsent('accepted');
+    document.getElementById('cookie-consent-banner').style.display = 'none';
+    loadGA();
+  };
+
+  window.declineCookies = function() {
+    setConsent('declined');
+    document.getElementById('cookie-consent-banner').style.display = 'none';
+  };
+
+  // Main logic
+  if (isEU()) {
+    var consent = getConsent();
+    if (consent === 'accepted') {
+      loadGA();
+    } else if (consent !== 'declined') {
+      document.getElementById('cookie-consent-banner').style.display = 'block';
+    }
+  } else {
+    // Non-EU: load GA immediately
+    loadGA();
+  }
+})();
+</script>
+
 <!-- end custom analytics snippet -->
