@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>OG Image Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    .og-image {
+      width: 1200px;
+      height: 630px;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative elements */
+    .og-image::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .og-image::after {
+      content: '';
+      position: absolute;
+      bottom: -150px;
+      left: -150px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    /* Grid pattern overlay */
+    .grid-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .name {
+      font-size: 72px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 20px;
+      letter-spacing: -2px;
+    }
+
+    .tagline {
+      font-size: 32px;
+      font-weight: 400;
+      color: #94a3b8;
+      margin-bottom: 40px;
+    }
+
+    .topics {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .topic {
+      background: rgba(59, 130, 246, 0.2);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #60a5fa;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .url {
+      position: absolute;
+      bottom: 60px;
+      right: 80px;
+      font-size: 20px;
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    /* Accent line */
+    .accent-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+    }
+  </style>
+</head>
+<body>
+  <div class="og-image">
+    <div class="accent-line"></div>
+    <div class="grid-overlay"></div>
+    <div class="content">
+      <h1 class="name">Hammad Tariq</h1>
+      <p class="tagline">Building at the intersection of AI & Web3</p>
+      <div class="topics">
+        <span class="topic">AI Agents</span>
+        <span class="topic">Ethereum</span>
+        <span class="topic">Decentralized Identity</span>
+        <span class="topic">Infrastructure</span>
+      </div>
+    </div>
+    <span class="url">hammadtariq.com</span>
+  </div>
+
+  <div style="margin: 40px; font-family: system-ui;">
+    <h2>Instructions:</h2>
+    <ol style="line-height: 2;">
+      <li>Open this file in Chrome/Firefox</li>
+      <li>Right-click on the image above → "Inspect"</li>
+      <li>Right-click the .og-image element → "Capture node screenshot"</li>
+      <li>Save as <code>og-default.png</code></li>
+      <li>Move to <code>assets/images/og-default.png</code></li>
+    </ol>
+    <p style="margin-top: 20px;"><strong>Or use:</strong> Open DevTools → Cmd+Shift+P → "Capture node screenshot"</p>
+  </div>
+</body>
+</html>
