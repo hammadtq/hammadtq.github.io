@@ -104,9 +104,6 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
-# Cloudflare Web Analytics (privacy-friendly, no cookies)
-# Get your token from: Cloudflare Dashboard > Analytics > Web Analytics > Add a site
-cloudflare_analytics     : # paste your beacon token here
 
 
 # Site Author
