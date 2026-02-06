@@ -177,7 +177,7 @@ The right architecture is **keys + OAuth**, not keys *instead of* OAuth:
 * enables user consent flows (payments, data access)
 * handles account recovery and administrative controls
 
-Think of OAuth as "human bureaucracy."
+Think of OAuth as "human bureaucracy."<br>
 Think of keypairs as "machine physics."
 
 You need both.
