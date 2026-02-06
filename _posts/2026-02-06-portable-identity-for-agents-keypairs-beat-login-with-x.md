@@ -51,13 +51,15 @@ OIDC is what people mean when they say "Login with Google/GitHub." It produces a
 ### Why this matters
 
 OAuth/OIDC gives you:
-✅ a way for a human to approve access
-✅ a way for a site to learn "this user is X at issuer Y"
+
+* ✅ a way for a human to approve access
+* ✅ a way for a site to learn "this user is X at issuer Y"
 
 But it does **not** give you:
-❌ a durable identity that can sign software artifacts
-❌ a portable identity that exists independent of an issuer
-❌ an identity that agents can use without friction across thousands of surfaces
+
+* ❌ a durable identity that can sign software artifacts
+* ❌ a portable identity that exists independent of an issuer
+* ❌ an identity that agents can use without friction across thousands of surfaces
 
 That's where keypairs come in.
 
@@ -370,7 +372,7 @@ OAuth/OIDC will still matter—especially for humans, consent, and recovery. But
 
 ### Further reading (specs / concepts / projects)
 
-* [OpenBotAuth](https://openbotauth.org) — open pay-per-crawl infra behind any CDN
+* [OpenBotAuth](https://openbotauth.org) — open-source portable identity and authentication for AI agents
 * [OpenBotAuth Documentation](https://docs.openbotauth.org/) — architecture, SDKs, plugins, proxy
 * [OpenBotRegistry](https://docs.openbotauth.org/architecture/openbotregistry) — agent key hosting via GitHub login
 * [OpenBotAuth WordPress Plugin](https://docs.openbotauth.org/plugins/overview) — publisher-side bot policy verification
