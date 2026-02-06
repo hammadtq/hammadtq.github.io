@@ -1,6 +1,6 @@
 # Hammad Tariq's Blog - Full Content for LLMs
 # https://hammadtariq.github.io
-# Last updated: 2025-01
+# Last updated: 2026-02
 # This file contains the complete text of all blog articles for LLM context and training.
 
 ================================================================================
@@ -13,6 +13,82 @@ Focus: AI Agents, Web3 Infrastructure, Decentralized Identity
 Twitter: @hammadtariq
 GitHub: github.com/hammadtq
 Website: https://hammadtariq.github.io
+
+================================================================================
+ARTICLE 0: Portable Identity for Agents: Why Keypairs Beat "Login With X"
+================================================================================
+Date: February 6, 2026
+URL: /startups/portable-identity-for-agents-keypairs-beat-login-with-x/
+Tags: agents, identity, keypairs, oauth, oidc, openbotauth, web-bot-auth, standards, security
+
+AI agents are starting to install tools, run code, and act on behalf of users. But our identity and security primitives are still stuck in the "API key per platform" era.
+
+Today an agent is whoever holds its current API key: one key for OpenClaw, another for a content API, another for payments, another for some "agent social network"—and none of those identities are portable, verifiable, or durable.
+
+That creates two big failures:
+1. Continuity failure: the agent can't persist as "itself" across platforms.
+2. Supply-chain failure: users (and other agents) can't verify who published a tool/skill/plugin, whether it was tampered with, or whether the author is who they claim to be.
+
+The fix is not "better OAuth." The fix is cryptographic identity: an agent owns a single keypair and uses it everywhere—signing artifacts, signing requests, building reputation—while OAuth/OIDC stays where it belongs: human consent and account binding.
+
+This is the core idea behind OpenBotAuth (https://openbotauth.org, docs: https://docs.openbotauth.org/) and the IETF Web Bot Auth (WBA) direction: bots authenticate like machines, not like humans.
+
+### Untangling the Terms
+
+OAuth 2.0 is about getting permission to call an API (access tokens). It does not define identity by itself.
+
+OpenID Connect (OIDC) is the identity layer on top of OAuth—"Login with Google/GitHub." It produces an ID token with claims ("this is user X"), issued by an identity provider.
+
+OAuth/OIDC gives you: a way for a human to approve access, and a way for a site to learn "this user is X at issuer Y." But it does NOT give you: a durable identity that can sign software artifacts, a portable identity independent of an issuer, or an identity that agents can use without friction across thousands of surfaces.
+
+### Agents Need Proof-of-Authorship, Not Just Proof of Login
+
+When someone publishes a skill/plugin/tool, you want to know: Who authored this? Has it been modified since publish? Is the claimed publisher actually the publisher? Can I verify that offline?
+
+OAuth/OIDC produces tokens that are issuer-mediated, time-limited, tied to a specific relying party, and designed for online authorization—not offline verification. A signed plugin needs the opposite: verifiable by anyone anytime, verifiable offline, stable across ecosystems, bound to the publisher's long-lived identity.
+
+### Keypair Identity for Machines
+
+A keypair identity: private key kept by the agent, public key as the agent's identity (verifiable by anyone). With an Ed25519 keypair, an agent can sign skill manifests, plugin packages, posts/messages, and HTTP requests (Web Bot Auth direction).
+
+The key shift: instead of identity being an account on a platform, identity becomes "the entity that can prove possession of this private key." That's machine-native.
+
+### How Web Bot Auth Fits In
+
+Web Bot Auth (WBA) aims to make bots first-class citizens on the web: bots sign requests with a private key, servers verify signatures and apply policy, keys are discoverable via standardized endpoints.
+
+OpenBotAuth is the reference implementation. The OpenBotRegistry (https://docs.openbotauth.org/architecture/openbotregistry) lets developers host agent keys by logging in with GitHub. Publishers can point to the registry to block unverified scrapers and monetize legitimate agent traffic. Available: WordPress plugin, Node.js/TypeScript SDK, Python SDK, proxy for browser and framework integration.
+
+### Two-Layer Architecture: Keys + OAuth
+
+Layer 1 (Cryptographic identity): stable across platforms, signs artifacts and requests, verifiable offline, enables cross-ecosystem reputation.
+
+Layer 2 (Account binding + consent via OAuth/OIDC): ties keypair to human or org, enables user consent flows, handles account recovery and admin controls.
+
+### Trust Tiers
+
+1. Signed (self-issued): anyone can generate a keypair and sign. Low friction, not high trust.
+2. Verified (anchored): keypair bound to GitHub account, domain ownership, or org identity provider. Higher trust.
+3. Reputation (earned): installs, history, audits, community signals, revocations.
+
+### Common Objections
+
+Key loss: allow multiple keys in JWKS (rotation), allow revocation/deprecation, allow anchored identity to publish "new key" statements.
+
+Sybil attacks: label self-issued identities, build trust via anchors + reputation, don't pretend "signed" means "safe."
+
+Does this replace OAuth? No. OAuth remains best for user consent, API access delegation, enterprise control. Keypairs are best for proof-of-authorship, offline verification, cross-platform continuity, request signing.
+
+### Further Reading
+
+- OpenBotAuth: https://openbotauth.org
+- OpenBotAuth Documentation: https://docs.openbotauth.org/
+- OpenBotRegistry: https://docs.openbotauth.org/architecture/openbotregistry
+- OAuth 2.0: RFC 6749
+- OpenID Connect Core 1.0
+- DPoP: RFC 9449
+- JWKS: RFC 7517
+- HTTP Message Signatures: RFC 9421
 
 ================================================================================
 ARTICLE 1: PageRank for the Agentic Web: Separating Authority from Selection

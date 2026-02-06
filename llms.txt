@@ -1,6 +1,6 @@
 # Hammad Tariq's Blog - LLM Context File
 # https://hammadtariq.github.io
-# Last updated: 2025-01
+# Last updated: 2026-02
 
 > This is the personal technical blog of Hammad Tariq, a founder and builder working at the intersection of artificial intelligence and Web3/blockchain technology. The blog covers AI agents, RAG systems, Ethereum development, decentralized identity, confidential computing, and startup insights.
 
@@ -46,8 +46,14 @@ GitHub: github.com/hammadtq
 - Leveraged Thinking: 4-Layer Framework
 - Post-scarcity economics (AI + Crypto)
 - PageRank for the agentic web
+- Portable keypair identity for agents (OAuth vs keypairs)
 
 ## Key Articles
+
+### Portable Identity for Agents: Why Keypairs Beat "Login With X" (Feb 2026)
+URL: /startups/portable-identity-for-agents-keypairs-beat-login-with-x/
+Topics: agents, identity, keypairs, oauth, oidc, openbotauth, web-bot-auth, standards, security
+Summary: Argues that AI agents need cryptographic keypair identity—not "better OAuth." Explains how a single Ed25519 keypair lets an agent sign artifacts, requests, and build reputation across platforms, while OAuth/OIDC stays for human consent and account binding. Covers Web Bot Auth, OpenBotAuth registry, discovery via JWKS, trust tiers, and the adoption path for portable agent identity.
 
 ### PageRank for the Agentic Web (Dec 2025)
 URL: /startups/pagerank-for-the-agentic-web/
@@ -98,7 +104,7 @@ Summary: Details the architecture for Agents-as-a-Service on Ethereum including 
 
 - **ETH0**: AI automation layer for Ethereum with RAG-powered agents
 - **Attach.dev**: Auth gateway and infrastructure for AI agents
-- **OpenBotAuth**: Open-source reference implementation for Web Bot Auth
+- **OpenBotAuth**: Open-source reference implementation for Web Bot Auth (https://openbotauth.org, docs: https://docs.openbotauth.org/)
 - **BitDSM**: Bitcoin integration with EigenLayer for institutional staking
 - **Sakana UI**: Perplexity-style deep research tool
 
