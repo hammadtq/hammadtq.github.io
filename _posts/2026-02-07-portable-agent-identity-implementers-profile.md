@@ -371,17 +371,13 @@ Directory allowlists reduce the risk of rogue JWKS sources. OpenBotAuth enforces
 - Nonce replay protection and timestamp checks.
 - Strong operational controls around header forwarding and SSRF.
 
-### 15.2 Areas to clarify (questions for WBA mailing list)
-
-These are the "interop questions" worth raising constructively:
+### 15.2 Areas to clarify (questions for WBA WG)
 
 1. **Canonical `Signature-Agent` wire format** -- OpenBotAuth currently accepts a URL string and performs discovery when needed. WBA drafts may profile a structured form; what is the recommended canonical field encoding for maximum interop?
 
 2. **Directory document shape** -- OpenBotAuth currently treats discovery targets as JWKS if JSON contains `{ keys: [...] }`. If the WBA directory is not literally JWKS, what should implementers serve at `/.well-known/http-message-signatures-directory`?
 
 3. **Key rotation + artifact verification** -- How should directories express key status (`active`/`deprecated`/`revoked`) and preserve historical verification? (This is where real deployments will quickly diverge unless guidance exists.)
-
-Posting these as "implementation experience + questions" tends to be productive.
 
 ---
 
