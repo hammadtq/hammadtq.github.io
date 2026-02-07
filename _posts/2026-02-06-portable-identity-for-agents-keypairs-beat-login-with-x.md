@@ -15,6 +15,10 @@ classes: "wide"
 summary: "AI agents need cryptographic identity—not 'better OAuth.' A single keypair lets an agent sign artifacts, sign requests, and build reputation everywhere, while OAuth/OIDC stays where it belongs: human consent and account binding."
 ---
 
+*For the full technical profile covering RFC 9421 wire format, verification algorithms, JWKS discovery, and key lifecycle, see [Portable Agent Identity (PAI): An Implementer's Profile](/protocol-notes/portable-agent-identity-implementers-profile/).*
+
+---
+
 AI agents are starting to **install tools, run code, and act on behalf of users**. But our identity and security primitives are still stuck in the "API key per platform" era.
 
 Today an agent is *whoever holds its current API key*:

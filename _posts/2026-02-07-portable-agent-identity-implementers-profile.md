@@ -15,6 +15,8 @@ classes: "wide"
 summary: "A portable identity model for AI agents based on Ed25519 keypairs and HTTP Message Signatures (RFC 9421), with JWKS discovery and optional trust anchors. Grounded in the OpenBotAuth implementation and aligned with the IETF Web Bot Auth architecture draft."
 ---
 
+*For a non-technical introduction to why agents need keypair identity over OAuth/OIDC, see [Why Keypairs Beat 'Login With X'](/startups/portable-identity-for-agents-keypairs-beat-login-with-x/).*
+
 > **Status:** Informational / Implementer's Profile
 > **Compatibility:** RFC 9421, OpenBotAuth implementation, WBA architecture draft
 > **Audience:** Implementers (origins, CDNs, agent runtimes)
