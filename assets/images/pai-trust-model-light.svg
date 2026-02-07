@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <defs>
+    <linearGradient id="pyramidGrad1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="pyramidGrad2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="pyramidGrad3" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="620" fill="#ffffff" rx="8"/>
+
+  <!-- Title -->
+  <text x="550" y="32" text-anchor="middle" fill="#111827" font-size="22" font-weight="700">Layered Trust Model</text>
+  <text x="550" y="52" text-anchor="middle" fill="#6b7280" font-size="11">Signed != Trusted: progressive trust escalation</text>
+
+  <!-- ===== TRUST PYRAMID (left) ===== -->
+  <!-- Layer 1 (bottom): Self-issued / Signed -->
+  <polygon points="100,480 520,480 450,360 170,360" fill="url(#pyramidGrad1)" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="310" y="400" text-anchor="middle" fill="#2563eb" font-size="14" font-weight="700">SELF-ISSUED / SIGNED</text>
+  <text x="310" y="420" text-anchor="middle" fill="#374151" font-size="10">Ed25519 keypair + RFC 9421 signatures</text>
+  <text x="310" y="436" text-anchor="middle" fill="#6b7280" font-size="9">Continuity &amp; attribution at low trust</text>
+  <text x="310" y="452" text-anchor="middle" fill="#6b7280" font-size="9">Any agent can self-issue</text>
+
+  <!-- Layer 2 (middle): Verified -->
+  <polygon points="170,360 450,360 390,240 230,240" fill="url(#pyramidGrad2)" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="310" y="278" text-anchor="middle" fill="#7c3aed" font-size="14" font-weight="700">VERIFIED</text>
+  <text x="310" y="298" text-anchor="middle" fill="#374151" font-size="10">Key bound to accountability anchor</text>
+  <text x="310" y="314" text-anchor="middle" fill="#6b7280" font-size="9">GitHub OAuth, org identity</text>
+
+  <!-- Layer 3 (top): Reputation -->
+  <polygon points="230,240 390,240 310,120" fill="url(#pyramidGrad3)" stroke="#059669" stroke-width="1.5"/>
+  <text x="310" y="188" text-anchor="middle" fill="#059669" font-size="14" font-weight="700">REPUTATION</text>
+  <text x="310" y="208" text-anchor="middle" fill="#374151" font-size="10">Behavior over time</text>
+
+  <!-- Trust arrow on left -->
+  <line x1="68" y1="480" x2="68" y2="135" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 L2,4 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <text x="68" y="125" text-anchor="middle" fill="#2563eb" font-size="9" font-weight="600">Higher trust</text>
+  <text x="68" y="496" text-anchor="middle" fill="#9ca3af" font-size="9">Lower trust</text>
+
+  <!-- ===== RIGHT SIDE: Layer details ===== -->
+
+  <!-- Layer 3 details (top) -->
+  <rect x="570" y="80" width="480" height="115" rx="8" fill="#f0fdf4" stroke="#059669" stroke-width="1.2"/>
+  <text x="810" y="104" text-anchor="middle" fill="#059669" font-size="13" font-weight="700">Layer 3: Reputation / Telemetry</text>
+  <circle cx="590" cy="124" r="3" fill="#059669" opacity="0.5"/>
+  <text x="600" y="128" fill="#374151" font-size="10">Karma score from verification event volume</text>
+  <circle cx="590" cy="142" r="3" fill="#059669" opacity="0.5"/>
+  <text x="600" y="146" fill="#374151" font-size="10">Origin diversity signals</text>
+  <circle cx="590" cy="160" r="3" fill="#059669" opacity="0.5"/>
+  <text x="600" y="164" fill="#374151" font-size="10">Opt-in / privacy-conscious</text>
+  <circle cx="590" cy="178" r="3" fill="#059669" opacity="0.5"/>
+  <text x="600" y="182" fill="#374151" font-size="10">Must not become centralized gatekeeping</text>
+
+  <!-- Layer 2 details (middle) -->
+  <rect x="570" y="210" width="480" height="130" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.2"/>
+  <text x="810" y="234" text-anchor="middle" fill="#7c3aed" font-size="13" font-weight="700">Layer 2: Controller Anchoring</text>
+  <circle cx="590" cy="254" r="3" fill="#7c3aed" opacity="0.5"/>
+  <text x="600" y="258" fill="#374151" font-size="10">Bind key to real-world identity (GitHub OAuth)</text>
+  <circle cx="590" cy="272" r="3" fill="#7c3aed" opacity="0.5"/>
+  <text x="600" y="276" fill="#374151" font-size="10">known-identities field in JWKS metadata</text>
+  <circle cx="590" cy="290" r="3" fill="#7c3aed" opacity="0.5"/>
+  <text x="600" y="294" fill="#374151" font-size="10">Verified = true when anchor exists</text>
+  <circle cx="590" cy="308" r="3" fill="#7c3aed" opacity="0.5"/>
+  <text x="600" y="312" fill="#374151" font-size="10">Out-of-band trust layer (does not change signature math)</text>
+  <circle cx="590" cy="326" r="3" fill="#7c3aed" opacity="0.5"/>
+  <text x="600" y="330" fill="#374151" font-size="10">Origins can require verification for access</text>
+
+  <!-- Layer 1 details (bottom) -->
+  <rect x="570" y="355" width="480" height="130" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="810" y="379" text-anchor="middle" fill="#2563eb" font-size="13" font-weight="700">Layer 1: Cryptographic Identity</text>
+  <circle cx="590" cy="399" r="3" fill="#2563eb" opacity="0.5"/>
+  <text x="600" y="403" fill="#374151" font-size="10">Ed25519 keypair as identity primitive</text>
+  <circle cx="590" cy="417" r="3" fill="#2563eb" opacity="0.5"/>
+  <text x="600" y="421" fill="#374151" font-size="10">RFC 9421 HTTP Message Signatures</text>
+  <circle cx="590" cy="435" r="3" fill="#2563eb" opacity="0.5"/>
+  <text x="600" y="439" fill="#374151" font-size="10">Signature-Input + Signature + Signature-Agent</text>
+  <circle cx="590" cy="453" r="3" fill="#2563eb" opacity="0.5"/>
+  <text x="600" y="457" fill="#374151" font-size="10">Local verification ("at the speed of math")</text>
+  <circle cx="590" cy="471" r="3" fill="#2563eb" opacity="0.5"/>
+  <text x="600" y="475" fill="#374151" font-size="10">No issuer contact needed per-request</text>
+
+  <!-- ===== Key Lifecycle (bottom) ===== -->
+  <rect x="80" y="510" width="940" height="90" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+  <text x="550" y="534" text-anchor="middle" fill="#111827" font-size="12" font-weight="600">Key Lifecycle: Generation, Rotation, Revocation</text>
+
+  <!-- Generate -->
+  <rect x="120" y="550" width="90" height="24" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+  <text x="165" y="566" text-anchor="middle" fill="#2563eb" font-size="10" font-weight="600">Generate</text>
+  <text x="165" y="586" text-anchor="middle" fill="#6b7280" font-size="9">Ed25519 keypair</text>
+
+  <!-- Arrow -->
+  <line x1="215" y1="562" x2="270" y2="562" stroke="#d1d5db" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <defs>
+    <marker id="arrowGray" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 L2,4 Z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+
+  <!-- Active -->
+  <rect x="275" y="550" width="90" height="24" rx="12" fill="#f0fdf4" stroke="#059669" stroke-width="1"/>
+  <text x="320" y="566" text-anchor="middle" fill="#059669" font-size="10" font-weight="600">Active</text>
+  <text x="320" y="586" text-anchor="middle" fill="#6b7280" font-size="9">Signing requests</text>
+
+  <line x1="370" y1="562" x2="425" y2="562" stroke="#d1d5db" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Rotate -->
+  <rect x="430" y="550" width="90" height="24" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1"/>
+  <text x="475" y="566" text-anchor="middle" fill="#7c3aed" font-size="10" font-weight="600">Rotate</text>
+  <text x="475" y="586" text-anchor="middle" fill="#6b7280" font-size="9">New key, old stays</text>
+
+  <line x1="525" y1="562" x2="580" y2="562" stroke="#d1d5db" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Deprecated -->
+  <rect x="585" y="550" width="100" height="24" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="1"/>
+  <text x="635" y="566" text-anchor="middle" fill="#d97706" font-size="10" font-weight="600">Deprecated</text>
+  <text x="635" y="586" text-anchor="middle" fill="#6b7280" font-size="9">Verify-only</text>
+
+  <line x1="690" y1="562" x2="745" y2="562" stroke="#d1d5db" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Revoked -->
+  <rect x="750" y="550" width="90" height="24" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="1"/>
+  <text x="795" y="566" text-anchor="middle" fill="#dc2626" font-size="10" font-weight="600">Revoked</text>
+  <text x="795" y="586" text-anchor="middle" fill="#6b7280" font-size="9">revoked_at timestamp</text>
+
+  <!-- Branding -->
+  <text x="1070" y="610" text-anchor="end" fill="#9ca3af" font-size="10">openbotauth.org</text>
+</svg>

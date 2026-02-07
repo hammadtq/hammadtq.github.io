@@ -14,6 +14,8 @@ main:
 
   # Side navigation (categories)
 categories:
+  - title: "PROTOCOL NOTES"
+    url: /categories/#protocol-notes
   - title: "ETH0 RAG"
     url: /categories/#eth0-rag
   - title: "STARTUPS"
