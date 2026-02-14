@@ -1,5 +1,5 @@
 ---
-title: "Why Agents Need Policy as Code (Not Just Prompts)"
+title: "Beyond Prompts: Why Agents Need Policy as Code"
 date: 2026-02-14
 categories: [startups]
 tags: [ai, agents, security, enterprise, governance, observability, policy, attach, openbotauth, openclaw]
