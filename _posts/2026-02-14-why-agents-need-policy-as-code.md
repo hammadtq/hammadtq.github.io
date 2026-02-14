@@ -169,7 +169,7 @@ This transforms "agent has email" into "agent has *this specific, auditable disp
 
 ## Example #2: "Rebalancing rules" and preventing accidental trading
 
-Another scenario I've been thinking about: rules like "if BTC exceeds X, trim 10%" or "if it drops Y, accumulate." Whether the agent executes trades or merely alerts you is a huge governance boundary.
+Another scenario I've been thinking about: rules like "if NVDA exceeds 10% of portfolio, trim back to 7%" or "if a position drops 15%, flag for review." Whether the agent executes trades or merely alerts you is a huge governance boundary.
 
 A strong policy posture here is: **default to advisory**, and make execution a separate, higher-trust path.
 
