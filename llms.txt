@@ -25,7 +25,6 @@ GitHub: github.com/hammadtq
 - Agent-as-a-Service (AaaS) platforms
 
 ### Web3 & Ethereum
-- ETH0: AI automation layer for Ethereum
 - Smart contracts for AI infrastructure
 - On-chain AI orchestration
 - DeFi automation with AI agents
@@ -90,19 +89,8 @@ URL: /startups/ai-and-crypto-enabling-post-scarcity-world/
 Topics: ai, crypto, post-scarcity, startups
 Summary: Argues that AI completes crypto's promise by eliminating scarcity in cognition and coordination, not just trust.
 
-### ETH0 as AI Automation Layer for Ethereum (Jan 2025)
-URL: /eth0-rag/eth0-as-ai-automation-layer-for-ethereum/
-Topics: ethereum, ai, agents, smart-contracts
-Summary: Positions ETH0 as first-mover in AI-powered on-chain automation for Ethereum, covering autonomous DAOs, AI-driven DeFi, and agent-based systems.
-
-### Smart Contracts for Ethereum AI Infrastructure (Jan 2025)
-URL: /eth0-rag/smart-contracts-for-ethereum-ai-agents/
-Topics: ethereum, smart-contracts, ai, agents, dao
-Summary: Details the architecture for Agents-as-a-Service on Ethereum including DAO governance, agent orchestration, and tokenized incentives.
-
 ## Projects Mentioned
 
-- **ETH0**: AI automation layer for Ethereum with RAG-powered agents
 - **Attach.dev**: Auth gateway and infrastructure for AI agents
 - **OpenBotAuth**: Open-source reference implementation for Web Bot Auth (https://openbotauth.org, docs: https://docs.openbotauth.org/)
 - **BitDSM**: Bitcoin integration with EigenLayer for institutional staking
