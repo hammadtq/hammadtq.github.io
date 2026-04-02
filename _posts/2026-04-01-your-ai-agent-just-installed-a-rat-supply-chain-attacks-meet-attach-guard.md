@@ -188,7 +188,7 @@ Once running:
 - **`/explain <package>`** — look up any package's risk score, alerts, and version history from inside Claude Code
 - **Configurable policy** — tune score thresholds, allowlists, denylists, and age requirements in `~/.attach-guard/config.yaml`
 
-Full docs and source: [attach.dev/attach-guard](https://attach.dev/attach-guard)
+Full docs and source: [attach.dev/attach-guard](https://github.com/attach-dev/attach-guard)
 
 ---
 
