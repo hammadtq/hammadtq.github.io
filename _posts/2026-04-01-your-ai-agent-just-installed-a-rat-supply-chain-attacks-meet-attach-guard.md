@@ -16,7 +16,7 @@ classes: "wide"
 summary: "axios and litellm were both compromised within a week — one by North Korean state actors, the other by stolen CI credentials. AI coding agents would have installed both without blinking. attach-guard is the open-source hook that blocks malicious packages before they touch your machine."
 ---
 
-Last Monday I [quote-tweeted](https://twitter.com/hammadtariq) Feross's alert about the axios compromise and wrote:
+Last Monday I [quote-tweeted](https://x.com/hammadtariq/status/2038828755632918929?s=20) Feross's alert about the axios compromise and wrote:
 
 > "Claude code should come with a dedicated dependency risk checker. Can't rely on socket-dev mcp, automatic enforcement is required."
 
