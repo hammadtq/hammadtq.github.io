@@ -10,6 +10,11 @@ related: false
 share: false
 toc: true
 
+header:
+  image: /assets/images/iclr-2026-rio-ipanema.png
+  teaser: /assets/images/iclr-2026-rio-ipanema.png
+  caption: "Ipanema at sunset, Rio de Janeiro — ICLR 2026."
+
 sidebar:
   nav: "categories"
 classes: "wide"
