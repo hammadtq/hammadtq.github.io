@@ -11,9 +11,7 @@ share: false
 toc: true
 
 header:
-  image: /assets/images/iclr-2026-rio-ipanema.png
   teaser: /assets/images/iclr-2026-rio-ipanema.png
-  caption: "Ipanema at sunset, Rio de Janeiro — ICLR 2026."
 
 sidebar:
   nav: "categories"
@@ -21,6 +19,9 @@ classes: "wide"
 
 summary: "I came to ICLR looking for memory systems. I left thinking memory is only one part of a bigger shift — the field is moving from models that answer to systems that maintain state, act, evaluate themselves, and improve over time."
 ---
+
+![Ipanema at sunset, Rio de Janeiro — ICLR 2026.](/assets/images/iclr-2026-rio-ipanema.png)
+{: .align-center}
 
 I came to ICLR looking for memory systems.
 
