@@ -9,6 +9,7 @@ sitemap: false
 
 Site: {{ site.url }}
 About the author: {{ '/about/' | absolute_url }}
+Projects: {{ '/projects/' | absolute_url }}
 Contact: @hammadtariq on X, github.com/hammadtq
 Last updated: {{ site.time | date: "%Y-%m-%d" }}
 
@@ -26,8 +27,10 @@ Hammad Tariq is a technical founder. His work spans:
 - [Jevlin](https://jevlin.ai): SuperSearch for coding agents; one call fans out across eight search engines, attributes every result to the engines that found it, and returns a receipt per engine. Open-source client: https://github.com/jevlinai/jevlin-go
 - [OpenBotAuth](https://openbotauth.org): open-source reference implementation of Web Bot Auth (docs: https://docs.openbotauth.org/)
 - [Attach](https://attach.dev): auth gateway and security tooling for AI agents, including [Attach Gateway](https://github.com/attach-dev/attach-gateway) and [attach-guard](https://attach.dev/attach-guard)
-- BitDSM: Bitcoin integration with EigenLayer for institutional staking
-- Sakana UI: Perplexity-style deep research tool
+- [AgentFiles](https://agentfiles.io): open-core artifact layer for multi-agent workflows (self-hostable API, CLI, MCP server)
+- [Polygramme](https://polygramme.com): continual learning for agents; [rlcli](https://github.com/polygramme/rlcli) turns agent traces into sandbox tasks and trains with RL
+- [Motif](https://www.motif.finance) (formerly BitDSM): first in-kind Bitcoin staking protocol on Ethereum, via EigenLayer
+- Full list: {{ '/projects/' | absolute_url }}
 
 ## Articles
 {% for post in site.posts %}

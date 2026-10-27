@@ -15,6 +15,8 @@ I'm Hammad Tariq, a technical founder. I build infrastructure for AI agents, mos
 - **[Attach](https://attach.dev)**: auth and security rails for AI agents. It includes [Attach Gateway](https://github.com/attach-dev/attach-gateway), which puts OIDC and A2A authentication in front of local LLM servers like Ollama and vLLM, and [attach-guard](https://attach.dev/attach-guard), an open-source hook that stops AI coding agents from installing malicious packages.
 - **[HamariHawa](https://hamarihawa.org/)**: a live satellite map of crop fires, smoke, traffic NO₂ and air pollution over Pakistan and India, with health guidance for 58 cities in English, Urdu and Hindi.
 
+More, including earlier work in Bitcoin staking and cryptography, is on the [projects page](/projects/).
+
 ## What I write about
 
 - **Agent identity and auth:** why [agents need keypairs, not "Login with X"](/startups/portable-identity-for-agents-keypairs-beat-login-with-x/), an [implementer's profile for portable agent identity](/protocol-notes/portable-agent-identity-implementers-profile/), and [what happened with Web Bot Auth at IETF 124 in Montreal](/startups/ietf-montreal-web-bot-auth-centralization-risk/).
