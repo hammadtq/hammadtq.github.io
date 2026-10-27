@@ -132,7 +132,7 @@
     "@id": {{ '/#me' | absolute_url | jsonify }},
     "name": {{ site.social.name | default: site.name | jsonify }},
     "url": {{ '/' | absolute_url | jsonify }},
-    "image": {{ site_og_image | jsonify }},
+    "image": {{ site.author.avatar | absolute_url | jsonify }},
     "jobTitle": "Founder & Technical Builder",
     "worksFor": {
       "@type": "Organization",
