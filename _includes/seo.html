@@ -10,6 +10,10 @@
   {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title -%}
 {%- endif -%}
 
+{%- if page.url == "/" -%}
+  {%- assign seo_title = page.title -%}
+{%- endif -%}
+
 {%- if seo_title -%}
   {%- assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- endif -%}
@@ -20,7 +24,7 @@
   {%- assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
 {% endif %}
 
-{%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
+{%- assign seo_description = page.description | default: page.summary | default: page.excerpt | default: site.description -%}
 {%- if seo_description -%}
   {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
 {%- endif -%}
@@ -138,8 +142,8 @@
       "description": "Live satellite map of crop fires, smoke and air pollution over Pakistan and India.",
       "founder": { "@id": {{ '/#me' | absolute_url | jsonify }} }
     },
-    "knowsAbout": ["Artificial Intelligence", "AI Agents", "Web3", "Ethereum", "Blockchain", "Smart Contracts", "Decentralized Identity", "RAG Systems"],
-    "description": "Technical founder building at the intersection of AI and Web3. Focus areas include AI agent infrastructure, decentralized identity, and blockchain development tools."{% if site.social.links %},
+    "knowsAbout": ["Artificial Intelligence", "AI Agents", "Agent Identity", "Web Bot Auth", "HTTP Message Signatures", "AI Security", "Software Supply Chain Security", "Web3", "Ethereum", "Decentralized Identity", "RAG Systems", "Air Quality Data"],
+    "description": "Technical founder building infrastructure for AI agents (OpenBotAuth, Attach) and HamariHawa, a live map of crop fires and air pollution over Pakistan and India."{% if site.social.links %},
     "sameAs": {{ site.social.links | jsonify }}{% endif %}
   }
 </script>
@@ -153,14 +157,16 @@
     "description": {{ seo_description | jsonify }},
     "image": {% if page_large_image %}{{ page_large_image | jsonify }}{% elsif page_teaser_image %}{{ page_teaser_image | jsonify }}{% else %}{{ site_og_image | jsonify }}{% endif %},
     "datePublished": "{{ page.date | date_to_xmlschema }}",
-    {% if page.last_modified_at %}"dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",{% endif %}
+    "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
     "author": {
       "@type": "Person",
+      "@id": {{ '/#me' | absolute_url | jsonify }},
       "name": {{ author.name | default: site.author.name | jsonify }},
       "url": {{ '/' | absolute_url | jsonify }}
     },
     "publisher": {
       "@type": "Person",
+      "@id": {{ '/#me' | absolute_url | jsonify }},
       "name": {{ site.name | jsonify }},
       "url": {{ '/' | absolute_url | jsonify }}
     },
@@ -182,18 +188,28 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": {{ '/#website' | absolute_url | jsonify }},
     "name": {{ site.title | jsonify }},
     "url": {{ '/' | absolute_url | jsonify }},
     "description": {{ site.description | jsonify }},
-    "author": {
-      "@type": "Person",
-      "name": {{ site.name | jsonify }}
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "{{ '/' | absolute_url }}search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "inLanguage": "en-US",
+    "author": { "@id": {{ '/#me' | absolute_url | jsonify }} },
+    "publisher": { "@id": {{ '/#me' | absolute_url | jsonify }} }
+  }
+</script>
+{% endif %}
+
+{% if page.url == "/about/" %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": {{ canonical_url | jsonify }},
+    "url": {{ canonical_url | jsonify }},
+    "name": {{ page.title | jsonify }},
+    "description": {{ seo_description | jsonify }},
+    "isPartOf": { "@id": {{ '/#website' | absolute_url | jsonify }} },
+    "mainEntity": { "@id": {{ '/#me' | absolute_url | jsonify }} }
   }
 </script>
 {% endif %}

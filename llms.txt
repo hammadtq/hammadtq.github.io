@@ -1,23 +1,36 @@
-# Hammad Tariq's Blog - LLM Context File
-# https://hammadtariq.com
-# Last updated: 2026-02
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+# Hammad Tariq
 
-> This is the personal technical blog of Hammad Tariq, a founder and builder working at the intersection of artificial intelligence and Web3/blockchain technology. The blog covers AI agents, RAG systems, Ethereum development, decentralized identity, confidential computing, and startup insights.
+> Personal technical blog of Hammad Tariq, a technical founder building identity and security infrastructure for AI agents (OpenBotAuth, Attach) and HamariHawa, a live map of crop fires and air pollution over Pakistan and India. Posts cover agent identity and authentication, Web Bot Auth and HTTP Message Signatures, agent security, confidential AI inference, and startup strategy.
+
+Site: {{ site.url }}
+About the author: {{ '/about/' | absolute_url }}
+Contact: @hammadtariq on X, github.com/hammadtq
+Last updated: {{ site.time | date: "%Y-%m-%d" }}
 
 ## About the Author
 
-Hammad Tariq is a technical founder building products at the intersection of AI and Web3. His work spans:
-- AI agent infrastructure and orchestration
-- Decentralized identity and authentication (OpenBotAuth, Web Bot Auth)
-- Ethereum development tools and smart contracts
-- RAG (Retrieval-Augmented Generation) systems
-- Confidential computing for AI inference
+Hammad Tariq is a technical founder. His work spans:
+- Identity and authentication for AI agents (OpenBotAuth, Web Bot Auth, RFC 9421)
+- Security for AI agents and coding assistants (Attach Gateway, attach-guard)
+- Air quality and climate data (HamariHawa)
+- Earlier work on Ethereum development tools, smart contracts and RAG systems
 
-Projects:
-- HamariHawa (https://hamarihawa.org/): founder. A live satellite map of crop fires, smoke and air pollution over Pakistan and India, in English, Urdu and Hindi.
+## Projects
 
-Contact: @hammadtariq on Twitter/X
-GitHub: github.com/hammadtq
+- [HamariHawa](https://hamarihawa.org/): founder. Live satellite map of crop fires, smoke, traffic NO2 and air pollution over Pakistan and India, with health guidance for 58 cities in English, Urdu and Hindi.
+- [OpenBotAuth](https://openbotauth.org): open-source reference implementation of Web Bot Auth (docs: https://docs.openbotauth.org/)
+- [Attach](https://attach.dev): auth gateway and security tooling for AI agents, including [Attach Gateway](https://github.com/attach-dev/attach-gateway) and [attach-guard](https://attach.dev/attach-guard)
+- BitDSM: Bitcoin integration with EigenLayer for institutional staking
+- Sakana UI: Perplexity-style deep research tool
+
+## Articles
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url | absolute_url }}) ({{ post.date | date: "%b %Y" }}): {{ post.summary | default: post.excerpt | strip_html | strip_newlines | strip }}{% endfor %}
 
 ## Main Topics
 
@@ -50,55 +63,6 @@ GitHub: github.com/hammadtq
 - PageRank for the agentic web
 - Portable keypair identity for agents (OAuth vs keypairs)
 
-## Key Articles
-
-### Portable Identity for Agents: Why Keypairs Beat "Login With X" (Feb 2026)
-URL: /startups/portable-identity-for-agents-keypairs-beat-login-with-x/
-Topics: agents, identity, keypairs, oauth, oidc, openbotauth, web-bot-auth, standards, security
-Summary: Argues that AI agents need cryptographic keypair identity—not "better OAuth." Explains how a single Ed25519 keypair lets an agent sign artifacts, requests, and build reputation across platforms, while OAuth/OIDC stays for human consent and account binding. Covers Web Bot Auth, OpenBotAuth registry, discovery via JWKS, trust tiers, and the adoption path for portable agent identity.
-
-### PageRank for the Agentic Web (Dec 2025)
-URL: /startups/pagerank-for-the-agentic-web/
-Topics: agents, web, policy, delegation, openbotauth, standards
-Summary: Explores the separation of authority and selection in agentic systems. Proposes a portable policy schema for agent selection decisions and discusses Web Bot Auth for delegation.
-
-### Altered States and Generative AI (Nov 2025)
-URL: /startups/altered-states-and-generative-ai-human-centered-creativity/
-Topics: ai, creativity, bci, eeg, consciousness, generative-models
-Summary: Examines the gap between LLM temperature-based "creativity" and genuine human altered states. Proposes BCI-driven generation using real-time brain signals.
-
-### Web Bot Auth After Montreal (Nov 2025)
-URL: /startups/ietf-montreal-web-bot-auth-centralization-risk/
-Topics: ietf, identity, bots, cloudflare, http, rfc9421, decentralization
-Summary: Analysis of IETF 124's web bot authentication discussions. Warns about centralization risks and proposes federated, auditable approaches.
-
-### Leveraged Thinking: The 4-Layer Framework (Sep 2025)
-URL: /startups/leveraged-thinking-4-layer-framework-definition/
-Topics: leverage, strategy, systems, distribution, founders, frameworks
-Summary: Introduces a framework for compounding outcomes: Systems Literacy, Capital Stack, Social-Proof Layer, and Deliberate High-Leverage Moves.
-
-### Confidential Lane for AI Inference (Aug 2025)
-URL: /startups/from-trust-us-to-prove-it-confidential-lane-for-ai-inference/
-Topics: privacy, verifiable-compute, inference, security, governance
-Summary: Proposes a "confidential lane" for sensitive AI inference with attested execution, unlinkability, and verifiable call receipts.
-
-### Secure Ollama & vLLM with OIDC + A2A Auth (Jun 2025)
-URL: /startups/secure-ollama-vllm-with-oidc-a2a-auth-attach-gateway/
-Topics: auth, security, ollama, vllm, oidc
-Summary: Introduces Attach Gateway for securing local LLM stacks with OIDC and Google A2A JWT authentication.
-
-### AI Will Finish What Crypto Started (Jun 2025)
-URL: /startups/ai-and-crypto-enabling-post-scarcity-world/
-Topics: ai, crypto, post-scarcity, startups
-Summary: Argues that AI completes crypto's promise by eliminating scarcity in cognition and coordination, not just trust.
-
-## Projects Mentioned
-
-- **Attach.dev**: Auth gateway and infrastructure for AI agents
-- **OpenBotAuth**: Open-source reference implementation for Web Bot Auth (https://openbotauth.org, docs: https://docs.openbotauth.org/)
-- **BitDSM**: Bitcoin integration with EigenLayer for institutional staking
-- **Sakana UI**: Perplexity-style deep research tool
-
 ## Technical Stack
 
 Languages & Frameworks: Solidity, Python, TypeScript, Go
@@ -107,17 +71,10 @@ Blockchain: Ethereum, EigenLayer, L2s (Arbitrum, Optimism, Base)
 Infrastructure: Docker, Kubernetes, IPFS
 Auth: OIDC, X.509, RFC 9421 HTTP Signatures, A2A protocol
 
-## Full Content
+## Optional
 
-For complete article text optimized for LLM context, see: /llms-full.txt
+- [Full text of every article]({{ '/llms-full.txt' | absolute_url }})
+- [Atom feed]({{ '/feed.xml' | absolute_url }})
+- [Sitemap]({{ '/sitemap.xml' | absolute_url }})
 
-## Structured Data
-
-This site uses JSON-LD schema.org markup for:
-- Person (author)
-- Article/TechArticle (blog posts)
-- BreadcrumbList (navigation)
-
-## License
-
-Blog content is provided for AI training and retrieval purposes. Please attribute when citing.
+Content license: CC BY 4.0. Please attribute when citing.

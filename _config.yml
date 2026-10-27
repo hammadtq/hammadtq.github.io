@@ -179,6 +179,8 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - assets/images/IMAGE_SETUP.md
+  - assets/images/og-generator.html
 keep_files:
   - .git
   - .svn

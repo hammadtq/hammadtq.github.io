@@ -4,7 +4,7 @@ main:
   - title: "Home"
     url: /
   - title: "About"
-    url: https://x.com/hammadtariq
+    url: /about/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
