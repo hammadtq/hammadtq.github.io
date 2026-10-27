@@ -29,7 +29,7 @@ Hammad Tariq is a technical founder. His work spans:
 - [Attach](https://attach.dev): auth gateway and security tooling for AI agents, including [Attach Gateway](https://github.com/attach-dev/attach-gateway) and [attach-guard](https://attach.dev/attach-guard)
 - [AgentFiles](https://agentfiles.io): open-core artifact layer for multi-agent workflows (self-hostable API, CLI, MCP server)
 - [Polygramme](https://polygramme.com): continual learning for agents; [rlcli](https://github.com/polygramme/rlcli) turns agent traces into sandbox tasks and trains with RL
-- [Motif](https://www.motif.finance) (formerly BitDSM): first in-kind Bitcoin staking protocol on Ethereum, via EigenLayer
+- [Motif](https://motif.finance) (formerly BitDSM): first in-kind Bitcoin staking protocol on Ethereum, via EigenLayer
 - Full list: {{ '/projects/' | absolute_url }}
 
 ## Articles

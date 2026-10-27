@@ -27,7 +27,7 @@ My background is in cryptography, AI and finance. These are the projects I've bu
 
 ## Finance
 
-- **[Motif](https://www.motif.finance)**: the first in-kind Bitcoin staking protocol on Ethereum. Bitcoin holders keep custody and stake through EigenLayer, and Motif issues a tokenised staking position against the locked Bitcoin. Code: [motif-project](https://github.com/motif-project), including the [core contracts](https://github.com/motif-project/motif-core-contracts) and the [node](https://github.com/motif-project/motif-node).
+- **[Motif](https://motif.finance)**: the first in-kind Bitcoin staking protocol on Ethereum. Bitcoin holders keep custody and stake through EigenLayer, and Motif issues a tokenised staking position against the locked Bitcoin. Code: [motif-project](https://github.com/motif-project), including the [core contracts](https://github.com/motif-project/motif-core-contracts) and the [node](https://github.com/motif-project/motif-node).
 
 ## Cryptography
 
