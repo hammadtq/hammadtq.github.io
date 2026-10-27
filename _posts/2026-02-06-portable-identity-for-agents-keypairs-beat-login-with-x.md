@@ -13,6 +13,8 @@ sidebar:
 classes: "wide"
 
 summary: "AI agents need cryptographic identity—not 'better OAuth.' A single keypair lets an agent sign artifacts, sign requests, and build reputation everywhere, while OAuth/OIDC stays where it belongs: human consent and account binding."
+header:
+  og_image: /assets/images/og/portable-identity-for-agents-keypairs-beat-login-with-x.jpg
 ---
 
 *For the full technical profile covering RFC 9421 wire format, verification algorithms, JWKS discovery, and key lifecycle, see [Portable Agent Identity (PAI): An Implementer's Profile](/protocol-notes/portable-agent-identity-implementers-profile/).*

@@ -181,6 +181,7 @@ exclude:
   - /test # ignore Minimal Mistakes /test
   - assets/images/IMAGE_SETUP.md
   - assets/images/og-generator.html
+  - tools
 keep_files:
   - .git
   - .svn

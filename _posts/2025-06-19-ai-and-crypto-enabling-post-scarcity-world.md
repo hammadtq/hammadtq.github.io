@@ -15,6 +15,8 @@ sidebar:
 classes: "wide"
 
 summary: A breakdown of how AI is completing crypto's unfinished promise — erasing the scarcity premium on cognition, coordination, and capital.
+header:
+  og_image: /assets/images/og/ai-and-crypto-enabling-post-scarcity-world.jpg
 ---
 
 Scarcity has a cost and we pay it in human life terms. 

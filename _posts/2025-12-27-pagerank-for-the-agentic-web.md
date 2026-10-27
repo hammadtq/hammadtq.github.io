@@ -13,6 +13,8 @@ sidebar:
 classes: "wide"
 
 summary: "Agents will reshape how choices get made on the web. Authority and selection are two distinct layers that need to stay separate. Here's why that matters and what a portable selection policy might look like."
+header:
+  og_image: /assets/images/og/pagerank-for-the-agentic-web.jpg
 ---
 
 A couple of days ago, I tossed out a thread on X about what I'm calling "PageRank for the agentic web." It started simple: a user tells an agent, "buy 12 eggs, don't ask questions." Fine, but which eggs? Which brand, merchant, or SKU? Who decides the algorithm behind that choice?

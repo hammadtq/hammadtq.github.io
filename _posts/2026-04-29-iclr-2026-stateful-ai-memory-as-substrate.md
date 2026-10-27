@@ -15,6 +15,8 @@ sidebar:
 classes: "wide"
 
 summary: "I came to ICLR looking for memory systems. I left thinking memory is only one part of a bigger shift — the field is moving from models that answer to systems that maintain state, act, evaluate themselves, and improve over time."
+header:
+  og_image: /assets/images/og/iclr-2026-stateful-ai-memory-as-substrate.jpg
 ---
 
 I came to ICLR looking for memory systems.

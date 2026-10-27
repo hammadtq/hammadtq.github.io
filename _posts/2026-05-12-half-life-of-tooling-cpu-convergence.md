@@ -10,6 +10,7 @@ share: false
 toc: true
 
 header:
+  og_image: /assets/images/half-life-of-tooling.png
   teaser: /assets/images/half-life-of-tooling.png
 
 sidebar:

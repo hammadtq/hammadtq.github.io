@@ -16,6 +16,8 @@ sidebar:
 classes: "wide"
 
 summary: "Attach Gateway secures Ollama and vLLM in one pip install—OIDC + Google A2A JWT auth, session headers, and Weaviate logging for audit-grade memory."
+header:
+  og_image: /assets/images/og/secure-ollama-vllm-with-oidc-a2a-auth-attach-gateway.jpg
 ---
 
 > “Auth is a TODO, feel free to PR.”

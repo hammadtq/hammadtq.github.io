@@ -13,6 +13,8 @@ sidebar:
 classes: "wide"
 
 summary: "Prompts are guidance; policy must be enforcement. Once agents can act—not just talk—you need executable guardrails: versioned rules, mediated tool access, and audit trails that prove what happened."
+header:
+  og_image: /assets/images/og/why-agents-need-policy-as-code.jpg
 ---
 
 Generative AI changed the interface to software.

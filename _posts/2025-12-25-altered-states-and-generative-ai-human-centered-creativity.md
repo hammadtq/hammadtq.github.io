@@ -13,6 +13,8 @@ sidebar:
 classes: "wide"
 
 summary: "LLMs use crude randomness to simulate creativity. Human altered states produce genuine novel associations. What if we connected the two through real-time brain-computer interfaces?"
+header:
+  og_image: /assets/images/og/altered-states-and-generative-ai-human-centered-creativity.jpg
 ---
 
 I've been thinking about a strange gap in how we approach AI creativity.

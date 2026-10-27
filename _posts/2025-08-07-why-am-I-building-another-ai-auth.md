@@ -16,6 +16,8 @@ sidebar:
 classes: "wide"
 
 summary: "Attach.dev is the rails beneath the agents. Not just another MCP auth sidecar — we ship the full, boring pipe."
+header:
+  og_image: /assets/images/og/why-am-i-building-another-ai-auth.jpg
 ---
 
 ## The Odyssey-and-Faceplant of “MCP Auth” Startups

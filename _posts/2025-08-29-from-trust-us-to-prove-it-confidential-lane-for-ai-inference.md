@@ -15,6 +15,8 @@ sidebar:
 classes: "wide"
 
 summary: "A founder’s take on moving AI inference from promises to portable proofs—without boiling the ocean."
+header:
+  og_image: /assets/images/og/from-trust-us-to-prove-it-confidential-lane-for-ai-inference.jpg
 ---
 
 Most AI inference today runs on policy and promises: “no training on your data,” “short retention,” and so on. That’s fine for low‑risk use. But as prompts start touching crown‑jewel assets—customer data, legal drafts, proprietary R&D—security teams increasingly want something stronger than policy: **proof**.

@@ -13,6 +13,8 @@ sidebar:
 classes: "wide"
 
 summary: "How small teams compound outcomes by stacking bets on existing systems, owned assets, and social signals—and how to train the muscle. With fast, founder‑grade examples and a recruiting‑oriented call to action."
+header:
+  og_image: /assets/images/og/leveraged-thinking-4-layer-framework-definition.jpg
 ---
 
 <!-- Description: A deep dive into Leveraged Thinking—what it is, how it differs from other models, and how to build it into your startup muscle. Fast examples inside. -->
