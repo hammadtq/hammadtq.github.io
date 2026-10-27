@@ -10,6 +10,7 @@ I'm Hammad Tariq, a technical founder. I build infrastructure for AI agents, mos
 
 ## What I'm building
 
+- **[Jevlin](https://jevlin.ai)**: SuperSearch for coding agents. One call asks eight search engines at once, tags every result with the engines that found it, and returns a receipt per engine. It's free for agents and works in Claude Code, Cursor, Codex, opencode and others. The client is open source at [jevlinai/jevlin-go](https://github.com/jevlinai/jevlin-go).
 - **[OpenBotAuth](https://openbotauth.org)**: an open-source reference implementation of Web Bot Auth. It gives AI agents and crawlers a portable cryptographic identity, using Ed25519 keypairs and HTTP Message Signatures (RFC 9421) with JWKS discovery. Docs are at [docs.openbotauth.org](https://docs.openbotauth.org/).
 - **[Attach](https://attach.dev)**: auth and security rails for AI agents. It includes [Attach Gateway](https://github.com/attach-dev/attach-gateway), which puts OIDC and A2A authentication in front of local LLM servers like Ollama and vLLM, and [attach-guard](https://attach.dev/attach-guard), an open-source hook that stops AI coding agents from installing malicious packages.
 - **[HamariHawa](https://hamarihawa.org/)**: a live satellite map of crop fires, smoke, traffic NO₂ and air pollution over Pakistan and India, with health guidance for 58 cities in English, Urdu and Hindi.

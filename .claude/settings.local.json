@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(wc:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:hammadtariq.com)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" )",
+      "Bash(\"file:///Users/hammadtariq/go/src/github.com/hammadtq/hammadtq.github.io/assets/images/og-generator.html\")",
+      "Bash(sips:*)",
+      "Bash(ls:*)",
+      "Bash(git add:*)",
+      "Bash(curl:*)",
+      "WebSearch"
+    ]
+  }
+}

@@ -23,6 +23,7 @@ Hammad Tariq is a technical founder. His work spans:
 ## Projects
 
 - [HamariHawa](https://hamarihawa.org/): founder. Live satellite map of crop fires, smoke, traffic NO2 and air pollution over Pakistan and India, with health guidance for 58 cities in English, Urdu and Hindi.
+- [Jevlin](https://jevlin.ai): SuperSearch for coding agents; one call fans out across eight search engines, attributes every result to the engines that found it, and returns a receipt per engine. Open-source client: https://github.com/jevlinai/jevlin-go
 - [OpenBotAuth](https://openbotauth.org): open-source reference implementation of Web Bot Auth (docs: https://docs.openbotauth.org/)
 - [Attach](https://attach.dev): auth gateway and security tooling for AI agents, including [Attach Gateway](https://github.com/attach-dev/attach-gateway) and [attach-guard](https://attach.dev/attach-guard)
 - BitDSM: Bitcoin integration with EigenLayer for institutional staking
