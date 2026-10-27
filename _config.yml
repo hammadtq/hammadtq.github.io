@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : "Systems, Strategy & Software"
 name                     : "Hammad Tariq"
 description              : "Technical blog by Hammad Tariq exploring AI agents, infrastructure, decentralized identity, strategy frameworks, and systems thinking."
-url                      : "https://hammadtariq.github.io"
+url                      : "https://hammadtariq.com"
 baseurl                  : ""
 repository               : "hammadtq/hammadtq.github.io"
 teaser                   : "/assets/images/default-teaser.png"
@@ -123,6 +123,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/hammadtariq"
+    - label: "HamariHawa"
+      icon: "fas fa-fw fa-wind"
+      url: "https://hamarihawa.org/"
 
 # Site Footer
 footer:
@@ -136,6 +139,9 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/hammadtariq"
+    - label: "HamariHawa"
+      icon: "fas fa-fw fa-wind"
+      url: "https://hamarihawa.org/"
     - label: "Privacy"
       icon: "fas fa-fw fa-shield-alt"
       url: "/privacy/"

@@ -125,13 +125,18 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": {{ '/#me' | absolute_url | jsonify }},
     "name": {{ site.social.name | default: site.name | jsonify }},
     "url": {{ '/' | absolute_url | jsonify }},
     "image": {{ site_og_image | jsonify }},
     "jobTitle": "Founder & Technical Builder",
     "worksFor": {
       "@type": "Organization",
-      "name": "Independent"
+      "@id": "https://hamarihawa.org/#org",
+      "name": "HamariHawa",
+      "url": "https://hamarihawa.org/",
+      "description": "Live satellite map of crop fires, smoke and air pollution over Pakistan and India.",
+      "founder": { "@id": {{ '/#me' | absolute_url | jsonify }} }
     },
     "knowsAbout": ["Artificial Intelligence", "AI Agents", "Web3", "Ethereum", "Blockchain", "Smart Contracts", "Decentralized Identity", "RAG Systems"],
     "description": "Technical founder building at the intersection of AI and Web3. Focus areas include AI agent infrastructure, decentralized identity, and blockchain development tools."{% if site.social.links %},

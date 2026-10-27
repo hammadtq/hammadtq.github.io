@@ -9,9 +9,9 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://hammadtariq.github.io/feed.xml"
+    "url": "https://hammadtariq.com/feed.xml"
   },
-  "logo_url": "https://hammadtariq.github.io/assets/images/og-default.png",
+  "logo_url": "https://hammadtariq.com/assets/images/og-default.png",
   "contact_email": "blog@hammadtariq.com",
-  "legal_info_url": "https://hammadtariq.github.io/llms.txt"
+  "legal_info_url": "https://hammadtariq.com/llms.txt"
 }

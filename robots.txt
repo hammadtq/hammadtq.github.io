@@ -1,14 +1,14 @@
-# robots.txt for hammadtariq.github.io
-# https://hammadtariq.github.io
+# robots.txt for hammadtariq.com
+# https://hammadtariq.com
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://hammadtariq.github.io/sitemap.xml
+Sitemap: https://hammadtariq.com/sitemap.xml
 
 # Feed location
-Sitemap: https://hammadtariq.github.io/feed.xml
+Sitemap: https://hammadtariq.com/feed.xml
 
 # AI/LLM Crawlers - Welcome!
 # This site provides llms.txt for AI assistants

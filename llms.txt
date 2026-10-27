@@ -1,5 +1,5 @@
 # Hammad Tariq's Blog - LLM Context File
-# https://hammadtariq.github.io
+# https://hammadtariq.com
 # Last updated: 2026-02
 
 > This is the personal technical blog of Hammad Tariq, a founder and builder working at the intersection of artificial intelligence and Web3/blockchain technology. The blog covers AI agents, RAG systems, Ethereum development, decentralized identity, confidential computing, and startup insights.
@@ -12,6 +12,9 @@ Hammad Tariq is a technical founder building products at the intersection of AI 
 - Ethereum development tools and smart contracts
 - RAG (Retrieval-Augmented Generation) systems
 - Confidential computing for AI inference
+
+Projects:
+- HamariHawa (https://hamarihawa.org/): founder. A live satellite map of crop fires, smoke and air pollution over Pakistan and India, in English, Urdu and Hindi.
 
 Contact: @hammadtariq on Twitter/X
 GitHub: github.com/hammadtq

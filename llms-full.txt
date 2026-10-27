@@ -1,5 +1,5 @@
 # Hammad Tariq's Blog - Full Content for LLMs
-# https://hammadtariq.github.io
+# https://hammadtariq.com
 # Last updated: 2026-02
 # This file contains the complete text of all blog articles for LLM context and training.
 
@@ -12,7 +12,8 @@ Role: Technical Founder & Builder
 Focus: AI Agents, Web3 Infrastructure, Decentralized Identity
 Twitter: @hammadtariq
 GitHub: github.com/hammadtq
-Website: https://hammadtariq.github.io
+Website: https://hammadtariq.com
+Projects: HamariHawa (https://hamarihawa.org/), founder. A live satellite map of crop fires, smoke and air pollution over Pakistan and India.
 
 ================================================================================
 ARTICLE 0: Portable Identity for Agents: Why Keypairs Beat "Login With X"
