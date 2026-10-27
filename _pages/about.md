@@ -3,19 +3,14 @@ title: "About"
 layout: single
 permalink: /about/
 author_profile: true
-description: "Hammad Tariq is a technical founder building identity and security infrastructure for AI agents (OpenBotAuth, Attach) and HamariHawa, a live map of crop fires and air pollution over Pakistan and India."
+description: "Hammad Tariq is a technical founder with a background in cryptography, AI and finance. He builds tools for AI agents, including Jevlin, Attach and OpenBotAuth, and HamariHawa, a live air-pollution map of Pakistan and India."
 ---
 
-I'm Hammad Tariq, a technical founder. I build infrastructure for AI agents, mostly around identity, authentication and security, and I write here about what I learn along the way.
+I'm Hammad Tariq, a technical founder. My background is in cryptography, AI and finance. Over the years that has meant zero-knowledge proofs and Bitcoin infrastructure, then DeFi and Bitcoin staking. These days it means tools for AI agents.
 
-## What I'm building
+Right now I'm building [Jevlin](https://jevlin.ai), a search engine for coding agents. I also work on agent identity and security through [OpenBotAuth](https://openbotauth.org) and [Attach](https://attach.dev), and run [HamariHawa](https://hamarihawa.org/), a live map of crop fires and air pollution over Pakistan and India. Everything I've built, with links to the code, is on the [projects page](/projects/).
 
-- **[Jevlin](https://jevlin.ai)**: SuperSearch for coding agents. One call asks eight search engines at once, tags every result with the engines that found it, and returns a receipt per engine. It's free for agents and works in Claude Code, Cursor, Codex, opencode and others. The client is open source at [jevlinai/jevlin-go](https://github.com/jevlinai/jevlin-go).
-- **[OpenBotAuth](https://openbotauth.org)**: an open-source reference implementation of Web Bot Auth. It gives AI agents and crawlers a portable cryptographic identity, using Ed25519 keypairs and HTTP Message Signatures (RFC 9421) with JWKS discovery. Docs are at [docs.openbotauth.org](https://docs.openbotauth.org/).
-- **[Attach](https://attach.dev)**: auth and security rails for AI agents. It includes [Attach Gateway](https://github.com/attach-dev/attach-gateway), which puts OIDC and A2A authentication in front of local LLM servers like Ollama and vLLM, and [attach-guard](https://attach.dev/attach-guard), an open-source hook that stops AI coding agents from installing malicious packages.
-- **[HamariHawa](https://hamarihawa.org/)**: a live satellite map of crop fires, smoke, traffic NO₂ and air pollution over Pakistan and India, with health guidance for 58 cities in English, Urdu and Hindi.
-
-More, including earlier work in Bitcoin staking and cryptography, is on the [projects page](/projects/).
+I write here about what I learn along the way.
 
 ## What I write about
 
