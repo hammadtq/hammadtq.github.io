@@ -3,12 +3,12 @@ title: "About"
 layout: single
 permalink: /about/
 author_profile: true
-description: "Hammad Tariq is a technical founder with a background in cryptography, AI and finance. He builds tools for AI agents, including Jevlin, Attach and OpenBotAuth, and HamariHawa, a live air-pollution map of Pakistan and India."
+description: "Hammad Tariq is a technical founder with a background in cryptography, AI and finance. He builds tools for AI agents, including Attach and OpenBotAuth, and HamariHawa, a live air-pollution map of Pakistan and India."
 ---
 
 I'm Hammad Tariq, a technical founder. My background is in cryptography, AI and finance. Over the years that has meant zero-knowledge proofs and Bitcoin infrastructure, then DeFi and Bitcoin staking. These days it means tools for AI agents.
 
-Right now I'm building [Jevlin](https://jevlin.ai), a search engine for coding agents. I also work on agent identity and security through [OpenBotAuth](https://openbotauth.org) and [Attach](https://attach.dev), and run [HamariHawa](https://hamarihawa.org/), a live map of crop fires and air pollution over Pakistan and India. Everything I've built, with links to the code, is on the [projects page](/projects/).
+Right now I work on agent identity and security through [OpenBotAuth](https://openbotauth.org) and [Attach](https://attach.dev), and run [HamariHawa](https://hamarihawa.org/), a live map of crop fires and air pollution over Pakistan and India. Everything I've built, with links to the code, is on the [projects page](/projects/).
 
 I write here about what I learn along the way.
 
